@@ -28,6 +28,10 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <script>
+    document.addEventListener('contextmenu', event => event.preventDefault());
+  </script>
+
 
 
 <body class="index-page" data-bs-spy="scroll" data-bs-target="#navmenu">
@@ -82,136 +86,119 @@
 
 
   <main id="main">
-<!-- Hero Section - Home Page -->
-<section id="hero" class="hero">
-  <div class="hero-bg"></div>
-  <div class="container">
-    
-    <div class="row">
-      <div class="col-lg-10">
-      
-        <div class="hero-content" data-aos="fade-up">
+    <style>
+      /* body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      } */
+  
+      #home-section {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        background-image: url('assets/img/hero-bg.jpg');
+        background-size: cover;
+        background-position: center;
+        color: white; /* Adjust text color for better visibility */
+        padding-bottom: 30px;
+      }
+      #home-section .containerh {
+        display: flex;
+        flex: 1;
+        height: calc(100vh - 70px); /* Adjust based on header height */
+        overflow: hidden;
+      }
+  
+      #home-section .left {
+        flex: 7;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+        padding: 40px;
+        text-align: left;
+      }
+  
+      #home-section .left h1, #home-section .left h3, #home-section .left p {
+        margin: 0 0 20px 0;
+      }
+  
+      #home-section .left .services-list {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 20px 0;
+      }
+  
+      #home-section .left .services-list li {
+        margin: 0 0 10px 0;
+      }
+  
+      #home-section .right {
+        flex: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+       
+      }
+  
+      #home-section .moving-images {
+        display: flex;
+        animation: move 20s linear infinite;
+        gap: 10px
+      }
+  
+      #home-section .moving-images img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+       
+      }
+  
+      @keyframes move {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-400%); }
+      }
+    </style>
+  </head>
+  <body>
+    <section id="home-section">
+      <div class="containerh">
+        <div class="left">
           <h1>Welcome to Expert Field Expeditions, Africa</h1>
           <h3>Discover Our Services</h3>
-          <ul class="services-list" data-aos="fade-up" data-aos-delay="200">
+          <ul class="services-list">
             <li>Custom Made Safaris</li>
             <li>Veterinary Profession Expeditions</li>
             <li>Medical Profession Expeditions</li>
             <li>Study Abroad Programs</li>
           </ul>
-          <p data-aos="fade-up" data-aos-delay="300">
+          <p>
             We designed Expert Field Expeditions, Africa (EFEA) to meet the unique needs of individuals travelling to Uganda and other East African countries. Our field expeditions are characterised by their innovative design and inherent sense of adventure, combining aspects of luxury and discovery to enhance the classic mobile safari experience. We offer expertly designed expedition safaris that cater to certain safari categories, including tailor-made safaris, field projects, veterinary safaris, medical safaris, and study abroad/student rotation.
           </p>
         </div>
+        <div class="right">
+          <div class="moving-images"style="height: 100%;">
+            <img src="assets/img/w1.jpg" alt="Image 1">
+            <img src="assets/img/w2.jpg" alt="Image 2">
+            <img src="assets/img/w3.jpg" alt="Image 3"> 
+            <img src="assets/img/w4.jpg" alt="Image 3"> 
+            <img src="assets/img/w5.jpg" alt="Image 3"> 
+
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section><!-- End Hero Section -->
-<section id="previous-section" class="example-section">
-  <!-- Section content -->
-  <div class="navigation-buttons" data-aos="fade-up" data-aos-delay="200" style="text-align: center;">
-    <a href="index.html#services" class="btn btn-secondary" style="margin: 0 10px;">Next</a>
-  </div>
-</section><!-- End Example Section -->
-<style>
-  .hero {
-    position: relative;
-    color: white;
-    text-align: left;
-    padding: 100px 0;
-    background: rgba(0, 0, 0, 0.5);
-  }
-
-  .hero-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('assets/img/hero-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    filter: brightness(1.2);
-    z-index: -1;
-  }
-
-  .hero-content {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 30px;
-    border-radius: 15px;
-  }
-
-  .hero-content h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-  }
-
-  .hero-content h3 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-  }
-
-  .hero-content p {
-    font-size: 1rem;
-    margin-bottom: 25px;
-  }
-
-  .services-list {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 20px;
-  }
-
-  .services-list li {
-    margin: 5px 0;
-    font-size: 1.2rem;
-  }
-
-  .btn {
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-transform: uppercase;
-    transition: background 0.3s ease;
-  }
-
-  .btn-primary {
-    background-color: #007bff;
-    color: white;
-    border: none;
-  }
-
-  .btn-primary:hover {
-    background-color: #0056b3;
-  }
-
-  .btn-secondary {
-    background-color: #6c757d;
-    color: white;
-    border: none;
-  }
-
-  .btn-secondary:hover {
-    background-color: #5a6268;
-  }
-
-  @media (max-width: 768px) {
-    .hero-content h1 {
-      font-size: 2rem;
-    }
-
-    .hero-content h3 {
-      font-size: 1.2rem;
-    }
-
-    .hero-content p {
-      font-size: 0.9rem;
-    }
-
-    .services-list li {
-      font-size: 1rem;
-    }
-  }
-</style>
+    </section>
+  
+    <!-- <script>
+      // JavaScript to make images move infinitely
+      const imagesContainer = document.querySelector('#home-section .moving-images');
+      let clone = imagesContainer.cloneNode(true);
+      imagesContainer.parentElement.appendChild(clone);
+    </script> -->
+  
 
 <!-- Services Section - Services Page -->
 <section id="services" class="services">
@@ -427,8 +414,29 @@
         <div class="expedition-box" data-aos="fade-up" data-aos-delay="100">
           <h4>4 Days: Bwindi and Queen Elizabeth Park or Queen and Kibale or Kabale and Queen</h4>
           <p>Experience a short but enriching expedition with visits to Bwindi, Queen Elizabeth Park, and more. Perfect for those looking to explore multiple destinations in a limited time.</p>
-          <section class="dynamic-content-section" style="background-image: url('assets/img/a1.JPG'); background-size: cover; background-position: center;">
+          <div class="imgC">
+            <img src="assets/img/m2.jpg" alt="Centered Image">
+            <img src="assets/img/m2.jpg" alt="Centered Image">
+          </div>
+          <section class="dynamic-content-section" >
             <style>
+              .imgC {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 50vh; /* Adjust as needed */
+                background-color: #f0f0f0; /* Background color for visibility */
+              }
+
+              .imgC img {
+                width: 40%; /* Set image width to 40% of its original size */
+                height: auto; /* Maintain aspect ratio */
+                max-width: 100%; /* Ensure image does not exceed container width */
+                max-height: 100%; /* Ensure image does not exceed container height */
+                border-radius: 10px; /* Adjust the border radius for rounded corners */
+                margin: 0 10px; /* Adjust margin as needed to create space between images */
+
+              }
               /* Styles to match your design */
               .dynamic-content-section {
                 display: flex;
@@ -436,7 +444,7 @@
                 align-items: center; /* Center items horizontally */
                 text-align: center;
                 padding: 20px; /* Added padding for better readability */
-                color: #fff; /* Text color on top of background */
+                color: black /* Text color on top of background */
               }
               .dynamic-content-heading {
                 text-align: center;
@@ -449,13 +457,13 @@
               }
               .dynamic-content-link {
                 cursor: pointer;
-                color:white;
+              
                 padding: 10px;
               }
               .dynamic-content {
                 display: none;
                 justify-content: center;
-                color:white;
+                
               }
               .dynamic-content.active {
                 display: block;
@@ -479,31 +487,31 @@
             
             <div class="dynamic-content-sections">
               <div id="highlightsContent" class="dynamic-content active">
-                <h4 style="color: white;">Highlights Section<hr></h4>
+                <h4>Highlights Section<hr></h4>
                 <ul>
                   <li>Kigali City Tour including a visit to the Genocide Memorial Center</li>
                   <li>Unforgettable encounter with the Mountain Gorillas</li>
                   <li>Visit to Iby’Iwacu Cultural Village</li>
                 </ul>
               </div>
-              <div id="daytodayContent" class="dynamic-content" style="color: white;">
-                <h4 style="color: white;">Day to Day Program Section<hr></h4>
+              <div id="daytodayContent" class="dynamic-content">
+                <h4 >Day to Day Program Section<hr></h4>
                 <div class="wp-block-kadence-tab kt-tab-inner-content kt-inner-tab-2 kt-inner-tab_54fbb4-30">
                   <div class="kt-tab-inner-content-inner">
-                    <h3 class="wp-block-heading" style="color: white;">Day 1(Arrival)</h3>
-                    <p style="color: white;">Arrival at Kigali Airport where you will be welcomed by a Great Lakes Safaris representative and transferred to your accommodation.</p>
-                    <h3 class="wp-block-heading" style="color: white;">Day 2(Kigali – Volcanoes National Park)</h3>
-                    <p style="color: white;">In the morning you can enjoy a guided city tour and visit some interesting, historical sites, including the Kigali Memorial Centre. Have lunch in the capital city before we proceed to the most beautiful national park of the country: Volcanoes National Park. It is the area with rich montaine ecosystems, from bamboo forest to open grassland and swamps.</p>
-                    <h3 class="wp-block-heading" style="color: white;">Day 3(Gorilla tracking) </h3>
-                    <p style="color: white;">Today you will have the opportunity to spend some time with the endangered mountain gorillas. You will make a beautiful hike through the green landscape and hills of the Virunga Volcanoes. Spend a magical hour with these amazing creatures while your guide will explain more about the family and their behavior.</p>
+                    <h3 class="wp-block-heading">Day 1(Arrival)</h3>
+                    <p >Arrival at Kigali Airport where you will be welcomed by a Great Lakes Safaris representative and transferred to your accommodation.</p>
+                    <h3 class="wp-block-heading">Day 2(Kigali – Volcanoes National Park)</h3>
+                    <p>In the morning you can enjoy a guided city tour and visit some interesting, historical sites, including the Kigali Memorial Centre. Have lunch in the capital city before we proceed to the most beautiful national park of the country: Volcanoes National Park. It is the area with rich montaine ecosystems, from bamboo forest to open grassland and swamps.</p>
+                    <h3 class="wp-block-heading">Day 3(Gorilla tracking) </h3>
+                    <p>Today you will have the opportunity to spend some time with the endangered mountain gorillas. You will make a beautiful hike through the green landscape and hills of the Virunga Volcanoes. Spend a magical hour with these amazing creatures while your guide will explain more about the family and their behavior.</p>
                     <p>In the afternoon we will visit the village Iby’Iwacu, located in the shadows of the Virunga Volcanoes, where reformed poachers showcase the traditional Rwandan way of life.</p>
-                    <h3 class="wp-block-heading" style="color: white;">Day 4(Volcanoes National Park – Kigali –) Then Departure</h3>
+                    <h3 class="wp-block-heading">Day 4(Volcanoes National Park – Kigali –) Then Departure</h3>
                     <p>Have a relaxed breakfast and enjoy the beautiful scenery one more time as we calmly transfer back to Kigali with (packed) lunch. Depending on the time of your international flight you will be dropped at Kigali International Airport.</p>
                   </div>
                 </div>
               </div>
               <div id="travelContent" class="dynamic-content">
-                <h4 style="color: white;">Travel Details Section<hr></h4>
+                <h4>Travel Details Section<hr></h4>
                 <ul>
                   <li>Airport transfer to/from Kigali Airport</li>
                   <li>Ground transport per private 4WD vehicle</li>
@@ -1002,8 +1010,8 @@
               <h4>Specialization</h4>
               <p>We specialize in coordinating top-tier medical camps, hospital visits, laboratory visits, medical field safaris, and field projects.</p>
             </div>
-            <div class="col-md-6 order-md-2">
-              <img src="assets/img/m1.jpg" alt="Image 1" class="img-fluid">
+            <div class="col-md-6 order-md-2" >
+              <img src="assets/img/m1.jpg" alt="Image 1" class="img-fluid" style="border-radius: 10px;">
             </div>
           </div>
         </div><!-- End MPE Box -->
@@ -1017,7 +1025,7 @@
               <p>Rural areas in Africa lack access to regular medical care. Medical camps established by international NGOs, volunteers, and well-wishers frequently serve as a temporary solution, allowing those in isolated areas to access medical care after a prolonged period without seeing a doctor. We coordinate the dispatch of medical personnel from both local and international teams, equipped with medicine and specialized knowledge.</p>
             </div>
             <div class="col-md-6 order-md-2">
-              <img src="assets/img/m1.jpg" alt="Image 1" class="img-fluid">
+              <img src="assets/img/m1.jpg" alt="Image 1" class="img-fluid" style="border-radius: 10px;">
             </div>
           </div>
         </div><!-- End New Class -->
@@ -1030,8 +1038,8 @@
               <h4>Visits to Hospital and Public Health Laboratories</h4>
               <p>We organize visits to both public and private hospitals and laboratories. Our knowledgeable medical team guides you through our nationwide public health and laboratory systems. This can be for both experiential and educational services.</p>
             </div>
-            <div class="col-md-6 order-md-2">
-              <img src="assets/img/m1.jpg" alt="Image 1" class="img-fluid">
+            <div class="col-md-6 order-md-2" >
+              <img src="assets/img/m1.jpg" alt="Image 1" class="img-fluid"style="border-radius: 10px;">
             </div>
           </div>
         </div><!-- End New Class -->
@@ -1053,7 +1061,7 @@
               <p>Uganda and most of East Africa boast of active traditional medical healing through the use of local herbs and ‘African chemistry’. Interact with known African medicine men to appreciate what it means to use African traditional knowledge, African-originated ideas, and historical, philosophical, and cultural means of tackling health issues.</p>
             </div>
             <div class="col-md-6 order-md-2">
-              <img src="assets/img/m1.jpg" alt="Image 1" class="img-fluid">
+              <img src="assets/img/m1.jpg" alt="Image 1" class="img-fluid" style="border-radius: 10px;">
             </div>
           </div>
         </div><!-- End New Class -->
@@ -1101,13 +1109,13 @@
         By following these steps, you can create a repository on GitHub and upload your project using VS Code, managing your code versions effectively through Git.</div>
       <div class="slider-wrapper">
         <div class="slider">
-          <img src="assets/img/m1.jpg" alt="Image 1">
-          <img src="assets/img/m2.jpg" alt="Image 2">
-          <img src="assets/img/m3.jpg" alt="Image 3">
-          <img src="assets/img/m4.jpg" alt="Image 4">
-          <img src="assets/img/m5.jpg" alt="Image 5">
+          <img src="assets/img/m1.jpg" alt="Image 1" style="border-radius: 10px;">
+          <img src="assets/img/m2.jpg" alt="Image 2" style="border-radius: 10px;">
+          <img src="assets/img/m3.jpg" alt="Image 3" style="border-radius: 10px;">
+          <img src="assets/img/m4.jpg" alt="Image 4" style="border-radius: 10px;">
+          <img src="assets/img/m5.jpg" alt="Image 5" style="border-radius: 10px;">
           <!-- <img src="assets/img/a1.jpg" alt="Image 6"> -->
-          <img src="assets/img/a2.jpg" alt="Image 7">
+          <img src="assets/img/a2.jpg" alt="Image 7" style="border-radius: 10px;">
         </div>
         <!-- Navigation arrows -->
         <button class="arrow prev" onclick="moveSlider(-1)">&#9664;</button>
@@ -2104,6 +2112,57 @@
     </section><!-- End Contact Section -->
     <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
     <script src="https://mediafiles.botpress.cloud/09d47d47-5371-43f8-b290-55fbe8866a00/webchat/config.js" defer></script>
+    <footer id="footer" class="footer">
+
+      <div class="container footer-top">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-about">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <span>Expert Field Expeditions</span>
+            </a>
+            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+            <div class="social-links d-flex mt-4">
+              <a href=""><i class="bi bi-twitter"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><a href="#">Web Design</a></li>
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">Product Management</a></li>
+              <li><a href="#">Marketing</a></li>
+              <li><a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+  
+          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+            <h4>Contact Us</h4>
+            <p>A108 Adam Street</p>
+            <p>New York, NY 535022</p>
+            <p>United States</p>
+            <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+            <p><strong>Email:</strong> <span>info@example.com</span></p>
+          </div>
+  
+        </div>
+      </div>
+  
+      <div class="container copyright text-center mt-4">
+        <p>&copy; <span>Copyright</span> <strong class="px-1">Append</strong> <span>All Rights Reserved</span></p>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you've purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+          Designed by <a href="https://www.linkedin.com/in/tumuhaise-michael-16104b247/">AttackTitan</a>
+        </div>
+      </div>
+  
+    </footer><!-- End Footer -->
   
   </main>
   <!-- Scroll Top Button -->
