@@ -49,7 +49,7 @@
  <!-- Nav Menu -->
 <nav id="navmenu" class="navmenu" >
   <ul style="text-align: center; padding-right: 200px;">
-    <li><a href="index.html#hero" class="active">Home</a></li>
+    <li><a href="index.html#home-section" class="active">Home</a></li>
     <li class="dropdown has-dropdown"><a href="index.html#services"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
       <ul class="dd-box-shadow">
         <li><a href="index.html#tailor-made-safaris">Custom Safaris</a></li>
@@ -106,7 +106,7 @@
         display: flex;
         flex: 1;
         height: calc(100vh - 70px); /* Adjust based on header height */
-        overflow: hidden;
+        /* overflow: hidden; */
       }
   
       #home-section .left {
@@ -115,9 +115,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+       /* background-color: rgba(0, 0, 0, 0.5);  Semi-transparent background */
         padding: 40px;
         text-align: left;
+        border-radius: 10px;
       }
   
       #home-section .left h1, #home-section .left h3, #home-section .left p {
@@ -146,7 +147,8 @@
   
       #home-section .moving-images {
         display: flex;
-        animation: move 20s linear infinite;
+        /* animation: move 20s linear infinite; */
+        animation: move 20s alternate-reverse infinite;
         gap: 10px
       }
   
@@ -154,6 +156,7 @@
         max-width: 100%;
         height: auto;
         object-fit: cover;
+        border-radius: 10px;
        
       }
   
@@ -161,14 +164,54 @@
         0% { transform: translateX(0); }
         100% { transform: translateX(-400%); }
       }
+
+      /* typed text */
+      .typewriter h1 {
+            border-right: 0.15em solid #f8f5f5;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 0;
+            animation: typing 4s steps(30, end) forwards, blink-caret 0.75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: black; }
+        }
     </style>
   </head>
   <body>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+                 const text = "Welcome to Expert Field Expeditions, Africa";
+                 const typewriterText = document.getElementById("typewriter-text");
+                 
+                 let index = 0;
+     
+                 function type() {
+                     if (index < text.length) {
+                         typewriterText.textContent += text.charAt(index);
+                         index++;
+                         setTimeout(type, 100);
+                     }
+                 }
+     
+                 type();
+             });
+     </script>
     <section id="home-section">
       <div class="containerh">
         <div class="left">
-          <h1>Welcome to Expert Field Expeditions, Africa</h1>
-          <h3>Discover Our Services</h3>
+          <div class="typewriter">
+            <h1 id="typewriter-text" style="color: #f8f5f5;"></h1>
+          </div>
+          <!-- <h1 style="color: #fff;" >Welcome to Expert Field Expeditions, Africa</h1> -->
+          <h3 style="color: #fff;">Discover Our Services</h3>
           <ul class="services-list">
             <li>Custom Made Safaris</li>
             <li>Veterinary Profession Expeditions</li>
@@ -340,26 +383,7 @@
       <p>East Africa offers endless safari possibilities, trekking adventures, and beach holidays. And we are here to guide and advise you, with the aim to create the most perfect, unforgettable safari experience of a lifetime.</p>
     </div>
 
-    <div class="row gy-4">
-      <div class="col-lg-12">
-        <div class="planned-expeditions-box" data-aos="fade-up" data-aos-delay="100">
-          <h4>Private and Customized Tours</h4>
-          <p>Our private and customized tours ensure flexibility and are made exclusively for you. With our expertise, we will discuss your travel ideas and make suggestions that will enhance your experience, until your safari is completely tailored to your personal tastes and interests. From our very first contact until you return from your trip, we will go an extra mile to ensure complete satisfaction.</p>
-          <p>Feel free to take a look at a small sample of our East African safaris and remember that we can always tailor your dream holiday to your specific needs and budget.</p>
-          <p>For more detailed information, personalized safaris and prices do not hesitate to contact us.</p>
-        </div>
-      </div><!-- End Planned Expeditions Box -->
-    </div><!-- End Row -->
-
   </div><!-- End Container -->
-
-  <section id="next-section" class="example-section">
-    <!-- Section content -->
-    <div class="navigation-buttons" data-aos="fade-up" data-aos-delay="200" style="text-align: center;">
-      <a href="index.html#services" class="btn btn-secondary" style="margin: 0 10px;">Back</a>
-      <a href="index.html#medical-profession-expeditions" class="btn btn-secondary" style="margin: 0 10px;">Next</a>
-    </div>
-  </section><!-- End Example Section -->
 
 </section><!-- End Planned Expeditions Section -->
 
@@ -441,8 +465,8 @@
               .dynamic-content-section {
                 display: flex;
                 flex-direction: column;
-                align-items: center; /* Center items horizontally */
-                text-align: center;
+                align-items: center; /*Center items horizontally */
+                text-align: center; 
                 padding: 20px; /* Added padding for better readability */
                 color: black /* Text color on top of background */
               }
@@ -462,7 +486,7 @@
               }
               .dynamic-content {
                 display: none;
-                justify-content: center;
+                /* justify-content: center; */
                 
               }
               .dynamic-content.active {
@@ -486,16 +510,16 @@
             </h3>
             
             <div class="dynamic-content-sections">
-              <div id="highlightsContent" class="dynamic-content active">
-                <h4>Highlights Section<hr></h4>
+              <div id="highlightsContent" class="dynamic-content active" style="text-align: left;">
+                <h4 style="text-align: center;">Highlights Section<hr></h4>
                 <ul>
                   <li>Kigali City Tour including a visit to the Genocide Memorial Center</li>
                   <li>Unforgettable encounter with the Mountain Gorillas</li>
                   <li>Visit to Iby’Iwacu Cultural Village</li>
                 </ul>
               </div>
-              <div id="daytodayContent" class="dynamic-content">
-                <h4 >Day to Day Program Section<hr></h4>
+              <div id="daytodayContent" class="dynamic-content" style="text-align: left;">
+                <h4  style="text-align: center;">Day to Day Program Section<hr></h4>
                 <div class="wp-block-kadence-tab kt-tab-inner-content kt-inner-tab-2 kt-inner-tab_54fbb4-30">
                   <div class="kt-tab-inner-content-inner">
                     <h3 class="wp-block-heading">Day 1(Arrival)</h3>
@@ -510,8 +534,8 @@
                   </div>
                 </div>
               </div>
-              <div id="travelContent" class="dynamic-content">
-                <h4>Travel Details Section<hr></h4>
+              <div id="travelContent" class="dynamic-content" style="text-align: left;">
+                <h4 style="text-align: center">Travel Details Section<hr></h4>
                 <ul>
                   <li>Airport transfer to/from Kigali Airport</li>
                   <li>Ground transport per private 4WD vehicle</li>
@@ -554,6 +578,7 @@
     <div class="section-title">
       <h2>6 Days Expedition</h2>
       <p>Explore Bwindi, Queen Elizabeth Park, and Kibale</p>
+
     </div>
 
     <div class="row gy-4">
@@ -561,6 +586,12 @@
         <div class="expedition-box" data-aos="fade-up" data-aos-delay="100">
           <h4>6 Days: Bwindi, Queen, and Kibale</h4>
           <p>Enjoy a week-long adventure visiting Bwindi, Queen Elizabeth Park, and Kibale. This expedition offers a balanced mix of wildlife viewing, trekking, and cultural experiences.</p>
+          
+          <div class="imgC">
+            <img src="assets/img/m2.jpg" alt="Centered Image">
+            <img src="assets/img/m2.jpg" alt="Centered Image">
+          </div>
+
           <section class="dynamic-content-section">
             <style>
               .dynamic-content-section {
@@ -606,8 +637,8 @@
             </h3>
           
             <div class="dynamic-content-sections">
-              <div id="highlights6Content" class="dynamic-content active">
-                <h4>Highlights Section<hr></h4>
+              <div id="highlights6Content" class="dynamic-content active" style="text-align: left;">
+                <h4 style="text-align: center;">Highlights Section<hr></h4>
                 <ul>
                   <li>Kigali City Tour including a visit to the Genocide Memorial Center</li>
                   <li>Unforgettable encounter with the Mountain Gorillas</li>
@@ -617,8 +648,8 @@
                 </ul>
               </div>
           
-              <div id="daytoday6Content" class="dynamic-content">
-                <h4>Day to Day Program Section<hr></h4>
+              <div id="daytoday6Content" class="dynamic-content" style="text-align: left;">
+                <h4 style="text-align: center">Day to Day Program Section<hr></h4>
                 <div>
                   <h3>Day 1(Arrival)</h3>
                   <p>Arrival at Kigali Airport where you will be welcomed by a Great Lakes Safaris representative and transferred to your accommodation.</p>
@@ -635,8 +666,8 @@
                 </div>
               </div>
           
-              <div id="travel6Content" class="dynamic-content">
-                <h4>Travel Details Section<hr></h4>
+              <div id="travel6Content" class="dynamic-content" style="text-align: left;">
+                <h4 style="text-align: center;">Travel Details Section<hr></h4>
                 <ul>
                   <li>Airport transfer to/from Kigali Airport</li>
                   <li>Ground transport per private 4WD vehicle</li>
@@ -684,6 +715,10 @@
         <div class="expedition-box" data-aos="fade-up" data-aos-delay="100">
           <h4>8 Days: Bwindi, Queen, Kibale, or Murchison Falls</h4>
           <p>Immerse yourself in an extended expedition, visiting some of East Africa's most iconic national parks and natural wonders, including Murchison Falls.</p>
+          <div class="imgC">
+            <img src="assets/img/m2.jpg" alt="Centered Image">
+            <img src="assets/img/m2.jpg" alt="Centered Image">
+          </div>
           <section class="dynamic-content-section">
             <style>
               .dynamic-content-section {
@@ -729,8 +764,8 @@
             </h3>
           
             <div class="dynamic-content-sections">
-              <div id="highlights8Content" class="dynamic-content active">
-                <h4>Highlights Section<hr></h4>
+              <div id="highlights8Content" class="dynamic-content active" style="text-align: left;">
+                <h4 style="text-align: center;">Highlights Section<hr></h4>
                 <ul>
                   <li>Kigali City Tour including a visit to the Genocide Memorial Center</li>
                   <li>Unforgettable encounter with the Mountain Gorillas</li>
@@ -742,8 +777,8 @@
                 </ul>
               </div>
           
-              <div id="daytoday8Content" class="dynamic-content">
-                <h4>Day to Day Program Section<hr></h4>
+              <div id="daytoday8Content" class="dynamic-content" style="text-align: left;">
+                <h4 style="text-align: center;">Day to Day Program Section<hr></h4>
                 <div>
                   <h3>Day 1(Arrival)</h3>
                   <p>Arrival at Kigali Airport where you will be welcomed by a Great Lakes Safaris representative and transferred to your accommodation.</p>
@@ -764,8 +799,8 @@
                 </div>
               </div>
           
-              <div id="travel8Content" class="dynamic-content">
-                <h4>Travel Details Section<hr></h4>
+              <div id="travel8Content" class="dynamic-content" style="text-align: left;">
+                <h4 style="text-align: center;">Travel Details Section<hr></h4>
                 <ul>
                   <li>Airport transfer to/from Kigali Airport</li>
                   <li>Ground transport per private 4WD vehicle</li>
@@ -813,6 +848,10 @@
         <div class="expedition-box" data-aos="fade-up" data-aos-delay="100">
           <h4>15 Days: Bwindi, Queen, Kibale, Lake Mburo, and Murchison Falls</h4>
           <p>Embark on an ultimate adventure spanning two weeks, covering diverse landscapes and ecosystems. From mountain gorillas in Bwindi to the majestic Murchison Falls, this expedition offers a comprehensive East African safari experience.</p>
+          <div class="imgC">
+            <img src="assets/img/m2.jpg" alt="Centered Image">
+            <img src="assets/img/m2.jpg" alt="Centered Image">
+          </div>
           <section class="dynamic-content-section">
             <style>
               .dynamic-content-section {
@@ -857,9 +896,9 @@
               </div>
             </h3>
           
-            <div class="dynamic-content-sections">
+            <div class="dynamic-content-sections" style="text-align: left;">
               <div id="highlights15Content" class="dynamic-content active">
-                <h4>Highlights Section<hr></h4>
+                <h4 style="text-align: center;">Highlights Section<hr></h4>
                 <ul>
                   <li>Kigali City Tour including a visit to the Genocide Memorial Center</li>
                   <li>Unforgettable encounter with the Mountain Gorillas</li>
@@ -874,8 +913,8 @@
                 </ul>
               </div>
           
-              <div id="daytoday15Content" class="dynamic-content">
-                <h4>Day to Day Program Section<hr></h4>
+              <div id="daytoday15Content" class="dynamic-content" style="text-align: left;">
+                <h4 style="text-align: center;">Day to Day Program Section<hr></h4>
                 <div>
                   <h3>Day 1(Arrival)</h3>
                   <p>Arrival at Kigali Airport where you will be welcomed by a Great Lakes Safaris representative and transferred to your accommodation.</p>
@@ -910,8 +949,8 @@
                 </div>
               </div>
           
-              <div id="travel15Content" class="dynamic-content">
-                <h4>Travel Details Section<hr></h4>
+              <div id="travel15Content" class="dynamic-content" style="text-align: left;">
+                <h4 style="text-align: center;">Travel Details Section<hr></h4>
                 <ul>
                   <li>Airport transfer to/from Kigali Airport</li>
                   <li>Ground transport per private 4WD vehicle</li>
