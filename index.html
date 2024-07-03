@@ -243,6 +243,62 @@
     </script> -->
   
 
+    <!-- Video Section - Video Page -->
+<section id="video" class="video">
+  <div class="container" data-aos="fade-up">
+    <div class="section-title">
+      <h2>Our Videos</h2>
+      <p>Experience the adventure through our exclusive video content</p>
+    </div>
+
+    <div class="row gy-4 justify-content-center">
+      <div class="col-lg-8">
+        <div class="video-box" data-aos="fade-up" data-aos-delay="100">
+          <video controls>
+            <source src="assets/videos/v1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- End Video Section -->
+
+<style> 
+  .video-box {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+}
+
+.video-box video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+</style>
+<!-- Include the following script before the closing </body> tag -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const videoSection = document.getElementById('video');
+    const iframe = videoSection.querySelector('iframe');
+
+    videoSection.addEventListener('aos:in', function() {
+      iframe.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+    });
+
+    videoSection.addEventListener('aos:out', function() {
+      iframe.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+    });
+  });
+</script>
+
 <!-- Services Section - Services Page -->
 <section id="services" class="services">
   <div class="container" data-aos="fade-up">
