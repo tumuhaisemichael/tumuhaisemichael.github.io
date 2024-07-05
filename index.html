@@ -241,6 +241,71 @@
       let clone = imagesContainer.cloneNode(true);
       imagesContainer.parentElement.appendChild(clone);
     </script> -->
+
+<!-- Image Section - Animated Images -->
+<section id="images" class="images">
+  <div class="container" data-aos="fade-up">
+    <div class="section-title">
+      <h2>Our Images</h2>
+      <p>Explore our collection through animated images</p>
+    </div>
+
+    <div class="row gy-4 justify-content-center">
+      <div class="col-lg-8">
+        <div class="image-box" data-aos="fade-up" data-aos-delay="100">
+          <div id="image-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a href="image1.html"><img src="assets/img/a2.JPG" class="d-block w-100" alt="Image 1" style="border-radius: 10px;"></a>
+              </div>
+              <div class="carousel-item" style="border-radius: 10px;">
+                <a href="image2.html"><img src="assets/img/a2.JPG" class="d-block w-100" alt="Image 2" style="border-radius: 10px;"></a>
+              </div>
+              <div class="carousel-item" style="border-radius: 10px;">
+                <a href="image3.html"><img src="assets/img/a2.JPG" class="d-block w-100" alt="Image 3" style="border-radius: 10px;"></a>
+              </div>
+              <!-- Add more carousel items as needed -->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#image-carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#image-carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- End Image Section -->
+
+<style>
+.carousel-item {
+  opacity: 1;
+  transition: filter .5s ease; /* Faster blur transition */
+}
+.carousel-item.active {
+  filter: blur(0); /* Ensure active item is not blurred */
+}
+.carousel-item-next, .carousel-item-prev {
+  filter: blur(5px); /* Apply blur effect */
+  opacity: 0;
+}
+
+</style>
+
+<script>
+  // Activate the carousel with automatic cycling
+  var myCarousel = document.getElementById('image-carousel');
+  var carousel = new bootstrap.Carousel(myCarousel, {
+    interval: 1000, // Set interval to 5 seconds (5000 milliseconds)
+    wrap: true // Enable looping of carousel items
+  });
+</script>
+
+
   
 
     <!-- Video Section - Video Page -->
