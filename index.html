@@ -28,15 +28,15 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <script>
+  <!-- <script>
     document.addEventListener('contextmenu', event => event.preventDefault());
-  </script>
+  </script> -->
 
 
 
 <body class="index-page" data-bs-spy="scroll" data-bs-target="#navmenu">
 
-  <!-- ======= Header ======= -->
+<!-- ======= Header ======= -->
   <header id="header" class="header fixed-top d-flex align-items-center">
     <div class="container-fluid d-flex align-items-center justify-content-between">
 
@@ -50,6 +50,17 @@
 <nav id="navmenu" class="navmenu" >
   <ul style="text-align: center; padding-right: 200px;">
     <li><a href="index.html#home-section" class="active">Home</a></li>
+    <li class="dropdown has-dropdown horizontal-dropdown">
+      <a href="index.html#tailor-made-safaris">
+        <span>Destinations</span> <i class="bi bi-chevron-down"></i>
+      </a>
+      <ul class="dd-box-shadow">
+        <li><a href="uganda.html">Uganda</a></li>
+        <li><a href="kenya.html">Kenya</a></li>
+        <li><a href="tanzania.html">Tanzania</a></li>
+        <li><a href="rwanda.html">Rwanda</a></li>
+      </ul>
+    </li>
     <li class="dropdown has-dropdown"><a href="index.html#services"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
       <ul class="dd-box-shadow">
         <li><a href="index.html#tailor-made-safaris">Custom Expeditions</a></li>
@@ -65,6 +76,7 @@
         </li>
       </ul>
     </li>
+   
     <li class="dropdown has-dropdown"><a href="index.html#tailor-made-safaris"><span>Custom Expeditions</span> <i class="bi bi-chevron-down"></i></a>
       <ul class="dd-box-shadow">
         <li><a href="2day1.html">2-Day Expedition</a></li>
@@ -76,6 +88,48 @@
         <li><a href="15day.html">15-Day Expedition(Across-Uganda Expedition)</a></li>
       </ul>
     </li>
+    
+    <style>
+      .horizontal-dropdown ul {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        list-style: none;
+        white-space: nowrap;
+        width: 100vw; /* Use viewport width to fill the entire screen width */
+        margin: 0; /* Remove default margin */
+        padding: 0; /* Remove default padding */
+      }
+      
+      .horizontal-dropdown:hover ul,
+      .horizontal-dropdown:focus-within ul {
+        display: flex;
+        flex-direction: row;
+      }
+      
+      .horizontal-dropdown ul li {
+        display: inline-block;
+        border-right: 1px solid #ddd;
+      }
+      
+      .horizontal-dropdown ul li:last-child {
+        border-right: none;
+      }
+      
+      .horizontal-dropdown ul li a {
+        display: block;
+        padding: 10px;
+        color: #333;
+        text-decoration: none;
+      }
+      
+      .horizontal-dropdown ul li a:hover {
+        background-color: #f0f0f0;
+      }
+      </style>
     <li><a href="index.html#gallery">Gallery</a></li>
     <li><a href="index.html#booking">Booking</a></li>
     <li><a href="index.html#team">Team</a></li>
@@ -87,107 +141,559 @@
 
 </div>
 </header><!-- End Header -->
-
-
   <main id="main">
-    <style>
-      /* body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-      } */
-  
-      #home-section {
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-        background-image: url('assets/WEBPHOTO TOP/back2.jpg');
-        background-size: cover;
-        background-position: center;
-        color: white; /* Adjust text color for better visibility */
-        padding-bottom: 30px;
-      }
-      #home-section .containerh {
-        display: flex;
-        flex: 1;
-        height: calc(100vh - 70px); /* Adjust based on header height */
-        /* overflow: hidden; */
-      }
-  
-      #home-section .left {
-        flex: 7;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-       /* background-color: rgba(0, 0, 0, 0.5);  Semi-transparent background */
-        padding: 40px;
-        text-align: left;
-        border-radius: 10px;
-      }
-  
-      #home-section .left h1, #home-section .left h3, #home-section .left p {
-        margin: 0 0 20px 0;
-      }
-  
-      #home-section .left .services-list {
-        list-style: none;
-        padding: 0;
-        margin: 0 0 20px 0;
-      }
-  
-      #home-section .left .services-list li {
-        margin: 0 0 10px 0;
-      }
-  
-      #home-section .right {
-        flex: 3;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+
+</section>
+<style>
+  /* body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  } */
+
+  #home-section {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url('assets/WEBPHOTO TOP/back2.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white; /* Adjust text color for better visibility */
+    padding-bottom: 30px;
+  }
+  #home-section .containerh {
+    display: flex;
+    flex: 1;
+    height: calc(100vh - 70px); /* Adjust based on header height */
+    /* overflow: hidden; */
+  }
+
+  #home-section .left {
+    flex: 7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+   /* background-color: rgba(0, 0, 0, 0.5);  Semi-transparent background */
+    padding: 40px;
+    text-align: left;
+    border-radius: 10px;
+  }
+
+  #home-section .left h1, #home-section .left h3, #home-section .left p {
+    margin: 0 0 20px 0;
+  }
+
+  #home-section .left .services-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+  }
+
+  #home-section .left .services-list li {
+    margin: 0 0 10px 0;
+  }
+
+  #home-section .right {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+   
+  }
+
+  #home-section .moving-images {
+    display: flex;
+    /* animation: move 20s linear infinite; */
+    animation: move 20s alternate-reverse infinite;
+    gap: 10px
+  }
+
+  #home-section .moving-images img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+   
+  }
+
+  @keyframes move {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-400%); }
+  }
+
+  /* typed text */
+  .typewriter h1 {
+        border-right: 0.15em solid #f8f5f5;
+        white-space: nowrap;
         overflow: hidden;
-        position: relative;
-       
-      }
-  
-      #home-section .moving-images {
-        display: flex;
-        /* animation: move 20s linear infinite; */
-        animation: move 20s alternate-reverse infinite;
-        gap: 10px
-      }
-  
-      #home-section .moving-images img {
-        max-width: 100%;
-        height: auto;
-        object-fit: cover;
+        width: 0;
+        animation: typing 4s steps(30, end) forwards, blink-caret 0.75s step-end infinite;
+    }
+
+    @keyframes typing {
+        from { width: 0; }
+        to { width: 100%; }
+    }
+
+    @keyframes blink-caret {
+        from, to { border-color: transparent; }
+        50% { border-color: black; }
+    }
+
+    /* Additional styles specific to the moving images section */
+    #moving-images-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: whitesmoke;
+      padding: 20px 0;
+      overflow: hidden; /* Hides overflow to prevent scrollbars */
+    }
+
+    .moving-images {
+      display: flex;
+      animation: move 40s linear infinite; /* Slower animation speed */
+      gap: 10px;
+    }
+
+    .moving-images img {
+      width: 350px; /* Fixed width for consistent size */
+      height: 350px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    @keyframes move {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    .services .section-title, .clients .section-title {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .service-box {
+        background: #f7f7f7;
+        padding: 20px;
         border-radius: 10px;
-       
-      }
-  
-      @keyframes move {
-        0% { transform: translateX(0); }
-        100% { transform: translateX(-400%); }
-      }
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
 
-      /* typed text */
-      .typewriter h1 {
-            border-right: 0.15em solid #f8f5f5;
-            white-space: nowrap;
-            overflow: hidden;
-            width: 0;
-            animation: typing 4s steps(30, end) forwards, blink-caret 0.75s step-end infinite;
-        }
+    .service-box h4 {
+          margin-bottom: 15px;
+          font-size: 1.5em;
+          color: #333;
+    }
 
-        @keyframes typing {
-            from { width: 0; }
-            to { width: 100%; }
-        }
+    .service-box p {
+          margin-bottom: 0;
+          font-size: 1em;
+          color: #666;
+    }
 
-        @keyframes blink-caret {
-            from, to { border-color: transparent; }
-            50% { border-color: black; }
-        }
-    </style>
+      .service-link {
+        text-decoration: none;
+        color: #333;
+        transition: color 0.3s;
+}
+
+.service-link:hover {
+color: #007bff;
+}
+
+.clients .client-logo img {
+max-width: 100%;
+transition: all 0.3s ease-in-out;
+}
+
+.clients .client-logo img:hover {
+transform: scale(1.1);
+}
+
+.tailor-made-safaris .section-title {
+text-align: center;
+margin-bottom: 40px;
+}
+
+.custom-safaris-box {
+background: #f7f7f7;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+margin-bottom: 20px;
+}
+
+.custom-safaris-box h4 {
+margin-bottom: 15px;
+font-size: 1.5em;
+color: #333;
+}
+
+.custom-safaris-box p {
+margin-bottom: 10px;
+font-size: 1em;
+color: #666;
+}
+
+.custom-safaris-box ul {
+margin-left: 20px;
+list-style-type: disc;
+color: #666;
+}
+
+.custom-safaris-box ul li {
+margin-bottom: 5px;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+}
+
+.image-item {
+  text-align: center;
+}
+
+.grid-image {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 10px;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.grid-image:hover {
+  transform: scale(1.05);
+  border-color: #ff6600;
+}
+
+.grid-text {
+  margin-top: 10px;
+  font-size: 1em;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.image-item a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s;
+}
+
+.image-item a:hover .grid-image {
+  transform: scale(1.05);
+}
+
+.image-item a:hover .grid-text {
+  color: #ff6600;
+}
+
+.image-item a:hover {
+  color: #ff6600;
+}
+
+@media (max-width: 768px) {
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.slider-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .text-left, .text-right {
+    background-color: #f0f0f0; /* Optional: Add background color for better visibility */
+    padding: 10px;
+  }
+
+  .text {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .slider-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+
+  .slider img {
+    width: 100%;
+    height: 50%;
+    display: block;
+  }
+
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .prev {
+    left: 10px;
+  }
+
+  .next {
+    right: 10px;
+  }
+
+  @media (max-width: 768px) {
+    .slider-container {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto;
+    }
+
+    .text {
+      order: 1;
+    }
+
+    .slider-wrapper {
+      order: 2;
+      width: 100%;
+    }
+  }
+
+  .video-box {
+position: relative;
+padding-bottom: 56.25%; /* 16:9 aspect ratio */
+height: 0;
+overflow: hidden;
+max-width: 100%;
+background: #000;
+}
+
+.video-box video {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+border: 0;
+}
+
+.booking .section-title {
+text-align: center;
+margin-bottom: 40px;
+}
+
+.booking-form {
+background: #f7f7f7;
+padding: 30px;
+border-radius: 10px;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.booking-form .form-group {
+margin-bottom: 20px;
+}
+
+.booking-form label {
+font-weight: bold;
+margin-bottom: 10px;
+display: block;
+}
+
+.booking-form .form-control {
+width: 100%;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+
+.booking-form button {
+background-color: #007bff;
+color: #fff;
+padding: 10px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+font-size: 16px;
+transition: background-color 0.3s;
+}
+
+.booking-form button:hover {
+background-color: #0056b3;
+}
+
+.veterinary-profession-expeditions .section-title {
+text-align: center;
+margin-bottom: 40px;
+}
+
+.vpe-box {
+background: #f7f7f7;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+margin-bottom: 20px;
+}
+
+.vpe-box h4 {
+margin-bottom: 15px;
+font-size: 1.5em;
+color: #333;
+}
+
+.vpe-box p {
+margin-bottom: 0;
+font-size: 1em;
+color: #666;
+}
+
+.hover-link:hover {
+text-decoration: underline;
+}
+
+
+.expedition-section .section-title {
+text-align: center;
+margin-bottom: 40px;
+}
+
+.expedition-box {
+background: #f7f7f7;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+margin-bottom: 20px;
+}
+
+.expedition-box h4 {
+margin-bottom: 15px;
+font-size: 1.5em;
+color: #333;
+}
+
+.expedition-box p {
+margin-bottom: 10px;
+font-size: 1em;
+color: #666;
+}
+
+.navigation-buttons .btn {
+margin: 0 10px;
+}
+
+.medical-profession-expeditions .section-title {
+text-align: center;
+margin-bottom: 40px;
+}
+
+.mpe-box {
+background: #f7f7f7;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+margin-bottom: 20px;
+}
+
+.mpe-box h4 {
+margin-bottom: 15px;
+font-size: 1.5em;
+color: #333;
+}
+
+.mpe-box p, .mpe-box ul {
+margin-bottom: 10px;
+font-size: 1em;
+color: #666;
+}
+
+.mpe-box ul {
+margin-left: 20px;
+list-style-type: disc;
+}
+
+.mpe-box ul li {
+margin-bottom: 5px;
+}
+
+.study-abroad-programs .section-title {
+text-align: center;
+margin-bottom: 40px;
+}
+
+.sabp-box {
+background: #f7f7f7;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+margin-bottom: 20px;
+}
+
+.sabp-box h4 {
+margin-bottom: 15px;
+font-size: 1.5em;
+color: #333;
+}
+
+.sabp-box p, .sabp-box ul {
+margin-bottom: 10px;
+font-size: 1em;
+color: #666;
+}
+
+.sabp-box ul {
+margin-left: 20px;
+list-style-type: disc;
+}
+
+.sabp-box ul li {
+margin-bottom: 5px;
+}
+
+.gallery-container {
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+}
+
+.gallery-container .gallery-link {
+flex: 1 1 calc(25% - 10px); /* Adjusts width and spacing */
+max-width: calc(25% - 10px); /* Ensures all images are the same size */
+box-sizing: border-box;
+}
+
+.gallery-container .gallery-link img {
+width: 100%;
+height: auto;
+display: block;
+border-radius: 10px;
+}
+</style>
   </head>
   <body>
     <script>
@@ -245,33 +751,7 @@
     </section>
 
   <style>
-/* Additional styles specific to the moving images section */
-#moving-images-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: whitesmoke;
-  padding: 20px 0;
-  overflow: hidden; /* Hides overflow to prevent scrollbars */
-}
 
-.moving-images {
-  display: flex;
-  animation: move 40s linear infinite; /* Slower animation speed */
-  gap: 10px;
-}
-
-.moving-images img {
-  width: 350px; /* Fixed width for consistent size */
-  height: 350px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-@keyframes move {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
 </style>
   
   
@@ -326,49 +806,7 @@
 </section><!-- End Services Section -->
 
 <style>
-  .services .section-title, .clients .section-title {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-
-  .service-box {
-    background: #f7f7f7;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-  }
-
-  .service-box h4 {
-    margin-bottom: 15px;
-    font-size: 1.5em;
-    color: #333;
-  }
-
-  .service-box p {
-    margin-bottom: 0;
-    font-size: 1em;
-    color: #666;
-  }
-
-  .service-link {
-    text-decoration: none;
-    color: #333;
-    transition: color 0.3s;
-  }
-
-  .service-link:hover {
-    color: #007bff;
-  }
-
-  .clients .client-logo img {
-    max-width: 100%;
-    transition: all 0.3s ease-in-out;
-  }
-
-  .clients .client-logo img:hover {
-    transform: scale(1.1);
-  }
+  
 </style>
 
 
@@ -404,40 +842,7 @@
 
 
 <style>
-  .tailor-made-safaris .section-title {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-
-  .custom-safaris-box {
-    background: #f7f7f7;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-  }
-
-  .custom-safaris-box h4 {
-    margin-bottom: 15px;
-    font-size: 1.5em;
-    color: #333;
-  }
-
-  .custom-safaris-box p {
-    margin-bottom: 10px;
-    font-size: 1em;
-    color: #666;
-  }
-
-  .custom-safaris-box ul {
-    margin-left: 20px;
-    list-style-type: disc;
-    color: #666;
-  }
-
-  .custom-safaris-box ul li {
-    margin-bottom: 5px;
-  }
+  
 </style>
 
 <!-- 3x3 Image Grid Section -->
@@ -512,102 +917,7 @@
   </div>
   
   <style>
-    .image-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-      justify-items: center;
-      align-items: center;
-      padding: 20px;
-      background-color: #f4f4f4;
-      border-radius: 10px;
-    }
-
-    .image-item {
-      text-align: center;
-    }
-
-    .grid-image {
-      width: 100%;
-      max-width: 250px;
-      border-radius: 10px;
-      transition: transform 0.3s, border-color 0.3s;
-    }
-
-    .grid-image:hover {
-      transform: scale(1.05);
-      border-color: #ff6600;
-    }
-
-    .grid-text {
-      margin-top: 10px;
-      font-size: 1em;
-      color: #333;
-      transition: color 0.3s;
-    }
-
-    .image-item a {
-      text-decoration: none;
-      color: inherit;
-      transition: color 0.3s;
-    }
-
-    .image-item a:hover .grid-image {
-      transform: scale(1.05);
-    }
-
-    .image-item a:hover .grid-text {
-      color: #ff6600;
-    }
-
-    .image-item a:hover {
-      color: #ff6600;
-    }
-
-    @media (max-width: 768px) {
-      .image-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    @media (max-width: 480px) {
-      .image-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
-</section>
-
-
-<style>
-  .expedition-section .section-title {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-
-  .expedition-box {
-    background: #f7f7f7;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-  }
-
-  .expedition-box h4 {
-    margin-bottom: 15px;
-    font-size: 1.5em;
-    color: #333;
-  }
-
-  .expedition-box p {
-    margin-bottom: 10px;
-    font-size: 1em;
-    color: #666;
-  }
-
-  .navigation-buttons .btn {
-    margin: 0 10px;
-  }
+    
 </style>
 
 
@@ -754,78 +1064,7 @@
       </div>
     </div>
     <style>
-      .slider-container {
-        display: grid;
-        grid-template-columns: 1fr 2fr 1fr;
-        align-items: center;
-        width: 100%;
-        max-width: 1000px;
-        margin: 0 auto;
-        padding: 20px;
-        box-sizing: border-box;
-      }
-      .text-left, .text-right {
-        background-color: #f0f0f0; /* Optional: Add background color for better visibility */
-        padding: 10px;
-      }
-  
-      .text {
-        text-align: center;
-        padding: 10px;
-      }
-  
-      .slider-wrapper {
-        position: relative;
-        width: 100%;
-        overflow: hidden;
-      }
-  
-      .slider {
-        display: flex;
-        transition: transform 0.5s ease;
-      }
-  
-      .slider img {
-        width: 100%;
-        height: 50%;
-        display: block;
-      }
-  
-      .arrow {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: rgba(255, 255, 255, 0.5);
-        border: none;
-        font-size: 20px;
-        padding: 10px;
-        cursor: pointer;
-        outline: none;
-      }
-  
-      .prev {
-        left: 10px;
-      }
-  
-      .next {
-        right: 10px;
-      }
-  
-      @media (max-width: 768px) {
-        .slider-container {
-          grid-template-columns: 1fr;
-          grid-template-rows: auto auto auto;
-        }
-  
-        .text {
-          order: 1;
-        }
-  
-        .slider-wrapper {
-          order: 2;
-          width: 100%;
-        }
-      }
+      
     </style>
 
 <script>
@@ -860,39 +1099,7 @@
 </section><!-- End Medical Profession Expeditions Section -->
 
 <style>
-  .medical-profession-expeditions .section-title {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-
-  .mpe-box {
-    background: #f7f7f7;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-  }
-
-  .mpe-box h4 {
-    margin-bottom: 15px;
-    font-size: 1.5em;
-    color: #333;
-  }
-
-  .mpe-box p, .mpe-box ul {
-    margin-bottom: 10px;
-    font-size: 1em;
-    color: #666;
-  }
-
-  .mpe-box ul {
-    margin-left: 20px;
-    list-style-type: disc;
-  }
-
-  .mpe-box ul li {
-    margin-bottom: 5px;
-  }
+  
 </style>
 <!-- Study Abroad and Field Rotations Programs Section -->
 <section id="study-abroad-programs" class="study-abroad-programs">
@@ -989,39 +1196,7 @@
 </section><!-- End Study Abroad and Field Rotations Programs Section -->
 
 <style>
-  .study-abroad-programs .section-title {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-
-  .sabp-box {
-    background: #f7f7f7;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-  }
-
-  .sabp-box h4 {
-    margin-bottom: 15px;
-    font-size: 1.5em;
-    color: #333;
-  }
-
-  .sabp-box p, .sabp-box ul {
-    margin-bottom: 10px;
-    font-size: 1em;
-    color: #666;
-  }
-
-  .sabp-box ul {
-    margin-left: 20px;
-    list-style-type: disc;
-  }
-
-  .sabp-box ul li {
-    margin-bottom: 5px;
-  }
+ 
 </style>
 
 
@@ -1076,34 +1251,7 @@
 </section><!-- End Veterinary Profession Expeditions Section -->
 
 <style>
-  .veterinary-profession-expeditions .section-title {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-
-  .vpe-box {
-    background: #f7f7f7;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-  }
-
-  .vpe-box h4 {
-    margin-bottom: 15px;
-    font-size: 1.5em;
-    color: #333;
-  }
-
-  .vpe-box p {
-    margin-bottom: 0;
-    font-size: 1em;
-    color: #666;
-  }
-
-  .hover-link:hover {
-    text-decoration: underline;
-  }
+ 
 </style>
 
 
@@ -1225,24 +1373,7 @@
 
 
 <style>
-  .gallery-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
 
-.gallery-container .gallery-link {
-  flex: 1 1 calc(25% - 10px); /* Adjusts width and spacing */
-  max-width: calc(25% - 10px); /* Ensures all images are the same size */
-  box-sizing: border-box;
-}
-
-.gallery-container .gallery-link img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 10px;
-}
 </style>
 
   <!-- Video Section - Video Page -->
@@ -1267,23 +1398,7 @@
   </section><!-- End Video Section -->
   
   <style> 
-    .video-box {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    height: 0;
-    overflow: hidden;
-    max-width: 100%;
-    background: #000;
-  }
-  
-  .video-box video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-  }
+   
   </style>
   <!-- Include the following script before the closing </body> tag -->
   <script>
@@ -1390,52 +1505,6 @@
   </section><!-- End Example Section -->
   
 </section><!-- End Booking Section -->
-
-<style>
-  .booking .section-title {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-
-  .booking-form {
-    background: #f7f7f7;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  }
-
-  .booking-form .form-group {
-    margin-bottom: 20px;
-  }
-
-  .booking-form label {
-    font-weight: bold;
-    margin-bottom: 10px;
-    display: block;
-  }
-
-  .booking-form .form-control {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-
-  .booking-form button {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s;
-  }
-
-  .booking-form button:hover {
-    background-color: #0056b3;
-  }
-</style>
 
 <script>
   document.getElementById('booking-form').addEventListener('submit', function(event) {
