@@ -108,22 +108,6 @@
         <li><a href="rwanda.html">Rwanda</a></li>
       </ul>
     </li>
-    <li class="dropdown has-dropdown"><a href="index.html#services"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
-      <ul class="dd-box-shadow">
-        <li><a href="index.html#tailor-made-safaris">Custom Expeditions</a></li>
-        <li><a href="index.html#medical-profession-expeditions">Medical Expeditions</a></li>
-        <li><a href="index.html#study-abroad-programs">Study Abroad</a></li>
-        <li class="dropdown has-dropdown"><a href="index.html#veterinary-profession-expeditions"><span>Veterinary Expeditions</span> <i class="bi bi-chevron-down"></i></a>
-          <ul class="dd-box-shadow">
-            <li><a href="index.html#vet-ecological-safaris">Veterinary Ecological Safaris</a></li>
-            <li><a href="index.html#wildlife-immobilisation-course">Wildlife Immobilisation Course </a></li>
-            <li><a href="index.html#experiential-tourism">Experiential Tourism</a></li>
-            <li><a href="index.html#field-projects">Field Projects</a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-   
     <li class="dropdown has-dropdown"><a href="index.html#tailor-made-safaris"><span>Custom Expeditions</span> <i class="bi bi-chevron-down"></i></a>
       <ul class="dd-box-shadow">
         <li><a href="2day1.html">2-Day Expedition</a></li>
@@ -132,10 +116,20 @@
         <li><a href="4day2.html">4-Day Expedition(Explore Murchison Falls and Kibale Forest National Parks)</a></li>
         <li><a href="6day.html">6-Day Expedition(Explore Murchison Falls, Kibale Forest, Queen Elizabeth, and Lake Mburo National Parks) </a></li>
         <li><a href="8day.html">8-Day Expedition(Explore Bwindi Impenetrable and Queen Elizabeth National Parks, Kibale Forest, and Murchison Falls, Kidepo National Parks)</a></li>
+        <li><a href="7day.html">7-Day RWANDA-UGANDA Expedition </a></li>
         <li><a href="15day.html">15-Day Expedition(Across-Uganda Expedition)</a></li>
       </ul>
     </li>
-    
+    <li class="dropdown has-dropdown"><a href="index.html#veterinary-profession-expeditions"><span>Vet Expeditions</span> <i class="bi bi-chevron-down"></i></a>
+      <ul class="dd-box-shadow">
+        <li><a href="index.html#vet-ecological-safaris">Veterinary Ecological Safaris</a></li>
+        <li><a href="index.html#wildlife-immobilisation-course">Wildlife Immobilisation Course </a></li>
+        <li><a href="index.html#experiential-tourism">Experiential Tourism</a></li>
+        <li><a href="index.html#field-projects">Field Projects</a></li>
+      </ul>
+    </li>
+    <li><a href="index.html#medical-profession-expeditions">Med Expeditions</a></li>
+    <li><a href="index.html#study-abroad-programs">Student Aboard</a></li>
     <style>
       .horizontal-dropdown ul {
         display: none;
@@ -177,9 +171,6 @@
         background-color: #f0f0f0;
       }
       </style>
-    <li><a href="index.html#gallery">Gallery</a></li>
-    <li><a href="index.html#booking">Booking</a></li>
-    <li><a href="index.html#team">Team</a></li>
     <li><a href="index.html#contact">Contact</a></li>
   </ul>
 
@@ -782,7 +773,7 @@ border-radius: 10px;
       </div>
     </section>
 
-    <section id="moving-images-section">
+    <!-- <section id="moving-images-section">
       <div class="moving-images">
         <a href="image1.html"><img src="assets/WEBPHOTO TOP/move1.jpg" alt="Image 1"></a>
         <a href="image2.html"><img src="assets/WEBPHOTO TOP/move2.jpg" alt="Image 2"></a>
@@ -795,11 +786,183 @@ border-radius: 10px;
         <a href="image4.html"><img src="assets/WEBPHOTO TOP/move4.jpg" alt="Image 4"></a>
         <a href="image5.html"><img src="assets/WEBPHOTO TOP/move5.jpg" alt="Image 5"></a>
       </div>
-    </section>
+    </section> -->
 
   <style>
 
 </style>
+
+<style>
+  .slider-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      background-color: #f4f4f4;
+  }
+  .slider {
+      width: 100%;
+      max-width: 800px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      width: 100%
+  }
+  .slides img {
+      width: 800px;
+      border-radius: 10px;
+      height: 500px;
+      flex-shrink: 0;
+  }
+  .navigation {
+      position: absolute;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+  .navigation-button {
+      background-color: rgba(0, 0, 0, 0.5);
+      border: none;
+      color: white;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 50%;
+  }
+  .navigation-button:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+  }
+  .navigation-auto {
+      position: absolute;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      bottom: 10px;
+  }
+  .navigation-auto div {
+      border: 2px solid white;
+      padding: 5px;
+      border-radius: 50%;
+      margin: 0 5px;
+      cursor: pointer;
+  }
+  .navigation-auto div.active {
+      background-color: white;
+  }
+  @media (max-width: 800px) {
+            .slider {
+                max-width: 100%;
+            }
+
+</style>
+
+<section class="slider-section">
+  <div class="slider">
+      <div class="slides">
+        <a href="image1.html"><img src="assets/move/move2.jpg" alt="Image 1"></a>
+        <a href="image1.html"><img src="assets/move/move3.jpg" alt="Image 1"></a>
+        <a href="image1.html"><img src="assets/move/move1.jpg" alt="Image 1"></a>
+        <a href="image1.html"><img src="assets/move/move4.jpg" alt="Image 1"></a>
+        <a href="image1.html"><img src="assets/move/move5.jpg" alt="Image 1"></a>
+        <a href="image1.html"><img src="assets/move/move6.jpg" alt="Image 1"></a>
+        <a href="image1.html"><img src="assets/move/move7.jpg" alt="Image 1"></a>
+        <a href="image1.html"><img src="assets/move/move8.jpg" alt="Image 1"></a>
+        <a href="image1.html"><img src="assets/move/move9.jpg" alt="Image 1"></a>
+        <a href="image1.html"><img src="assets/move/move10.jpg" alt="Image 1"></a>
+        <a href="image1.html"><img src="assets/move/move11.jpg" alt="Image 1"></a>
+        <a href="image1.html"><img src="assets/move/move12.jpg" alt="Image 1"></a>
+        <a href="image1.html"><img src="assets/move/move13.jpg" alt="Image 1"></a>
+        <a href="image1.html"><img src="assets/move/move14.jfif" alt="Image 1"></a>
+        <a href="image1.html"><img src="assets/move/move15.jfif" alt="Image 1"></a>
+        <a href="image1.html"><img src="assets/move/move16.jfif" alt="Image 1"></a>
+      </div>
+      <div class="navigation">
+          <button class="navigation-button" id="prev">&#10094;</button>
+          <button class="navigation-button" id="next">&#10095;</button>
+      </div>
+      <div class="navigation-auto">
+          <div class="auto-btn active" data-index="0"></div>
+          <div class="auto-btn" data-index="1"></div>
+          <div class="auto-btn" data-index="2"></div>
+          <div class="auto-btn" data-index="3"></div>
+          <div class="auto-btn" data-index="4"></div>
+          <div class="auto-btn" data-index="5"></div>
+          <div class="auto-btn" data-index="6"></div>
+          <div class="auto-btn" data-index="7"></div>
+          <div class="auto-btn" data-index="8"></div>
+          <div class="auto-btn" data-index="9"></div>
+          <div class="auto-btn" data-index="10"></div>
+          <div class="auto-btn" data-index="11"></div>
+          <div class="auto-btn" data-index="12"></div>
+          <div class="auto-btn" data-index="13"></div>
+          <div class="auto-btn" data-index="14"></div>
+          <div class="auto-btn" data-index="15"></div>
+          
+      </div>
+  </div>
+</section>
+<script>
+  var currentIndex = 0;
+  const slides = document.querySelector('.slides');
+  const slideImages = document.querySelectorAll('.slides img');
+  const totalSlides = slideImages.length;
+  const autoButtons = document.querySelectorAll('.auto-btn');
+
+  document.getElementById('next').addEventListener('click', () => {
+      moveToNextSlide();
+  });
+
+  document.getElementById('prev').addEventListener('click', () => {
+      moveToPreviousSlide();
+  });
+
+  autoButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+          currentIndex = parseInt(btn.getAttribute('data-index'));
+          updateSlidePosition();
+          updateAutoButtons();
+      });
+  });
+
+  function moveToNextSlide() {
+      if (currentIndex === totalSlides - 1) {
+          currentIndex = 0;
+      } else {
+          currentIndex++;
+      }
+      updateSlidePosition();
+      updateAutoButtons();
+  }
+
+  function moveToPreviousSlide() {
+      if (currentIndex === 0) {
+          currentIndex = totalSlides - 1;
+      } else {
+          currentIndex--;
+      }
+      updateSlidePosition();
+      updateAutoButtons();
+  }
+
+  function updateSlidePosition() {
+      slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+  }
+
+  function updateAutoButtons() {
+      autoButtons.forEach(btn => btn.classList.remove('active'));
+      autoButtons[currentIndex].classList.add('active');
+  }
+
+  setInterval(() => {
+      moveToNextSlide();
+  }, 3000);
+</script>
   
   
 <!-- Services Section - Services Page -->
@@ -931,6 +1094,12 @@ border-radius: 10px;
           <a href="6day.html">
             <img src="assets/customimages/6day.jpg" alt="Lake Bunyonyi" class="grid-image">
             <p class="grid-text">6-Day Expedition (Explore Murchison Falls, Kibale Forest, Queen Elizabeth, and Lake Mburo National Parks)</p>
+          </a>
+        </div>
+        <div class="image-item">
+          <a href="7day.html">
+            <img src="assets/6day expedition/download.jfif" alt="Lake Bunyonyi" class="grid-image">
+            <p class="grid-text">7-Day RWANDA-UGANDA Expedition (Explore the stunning Volcanoes National Park in Rwanda, Bwindi Impenetrable, Queen Elizabeth, and Lake Mburo National Parks in Uganda) </p>
           </a>
         </div>
         <div class="image-item">
@@ -1155,54 +1324,55 @@ border-radius: 10px;
       <h2>Study Abroad and Field Rotations Programs</h2>
       <p>Explore study abroad opportunities in Uganda and East Africa</p>
     </div>
+    <p>We invite students and recent graduates to take part in our study abroad programmes showcasing health and cultural diversity in Uganda and East Africa. We are open to individuals and groups seeking internships and externships, and clinical rotations.
+      We have our signature Program, One Health Annual Study Abroad Programme described below: 
+</p>
 
     <div class="row gy-4">
       <div class="col-lg-12">
         <div class="sabp-box" data-aos="fade-up" data-aos-delay="100">
-          <h4>Program Details</h4>
-          <p>Detailed program available on request. We invite students and recent graduates to take part in our study abroad programmes showcasing health and cultural diversity in Uganda and East Africa. We are open to individuals and groups seeking internships and externships, clinical rotations, and work away activities (volunteering).</p>
-        </div>
+          <h4>Program Description</h4>
+          <p>This programme exposes students to the following aspects in a tropical and developing country setting: One Health, human public health systems; animal health, animal production and management; wildlife health and management; veterinary public health; veterinary and human diagnostic laboratories; food science and nutrition; natural ecosystems, environmental conservation; and culture. It is intended to build a team that will advance a 'One Health' approach to promote health at the Human-Animal-Environment interface.</p>
+          <p>This course runs from June to July each year but can also be tailor made for participants who wish to have a different time frame.</p>
+          <p>It is possible to organise a winter, spring or autumn programme. </p>
+          <p>The international students are normally trained alongside local Ugandan/east African students at premises with a Human-Animal-Environment Interface setting. </p>
+          <p>The programme is coordinated by Expert Expeditions, Africa, Muse Safaris, Muse Wildlife Industry (MWI), and the Department of Wildlife and Aquatic Animal Resources at the College of Veterinary Medicine, Animal Resources, and Biosecurity (COVAB), Makerere University.</p>
+          </div>
       </div><!-- End SABP Box -->
 
       <div class="col-lg-12">
         <div class="sabp-box" data-aos="fade-up" data-aos-delay="200">
-          <h4>Signature Program: COVAB-Makerere Annual Study Abroad Programme</h4>
-          <p>This programme exposes students to aspects including livestock health, production, and management; wildlife health and management; veterinary public health; veterinary and human diagnostic laboratories; food science and nutrition; human public health systems; environmental conservation; and culture. It aims to build a team that will advance a 'One Health' approach to promote health at the Human-Animal-Environment interface.</p>
-        </div>
+          <h4>Other participating entities involved in the training are:</h4>
+          <ul>College of Health Sciences (CHS)  Uganda Wildlife Authority (UWA)</ul>
+          <ul>College of Agricultural and Environmental Sciences (CAES)</ul>
+          <ul>Makerere University Biological Field Station (MUBFS)</ul>
+          <ul>Uganda Wildlife Conservation Education Centre (UWEC)</ul>
+          <ul>African Union of Conservationists (AUC)</ul>
+          <ul>Reform Africa (RA)</ul>
+          <ul>JESA Farm</ul>
+          <ul>The Uganda Society for the Protection and Care of Animals (USPCA)</ul>
+          <ul>Dr. Naluyima's One Acre Farm</ul>
+          <ul>Victoria Treasures Fish Farm</ul>
+          <ul>Central Public Health Laboratories (CPHLs)</ul>
+          <ul>Kirudu Hospital, Kampala</ul>
+          <ul>National Animal Diseases and Epidemiology Centre (NADDEC)</ul>
+          <ul>Uganda Virus Research Institute (UVRI)</ul>
+          <ul>National Animal Genetics Resources and Data Bank (NAGR&DB)</ul>
+          <ul>Gorilla Doctors</ul>
+          <ul>Ndere Cultural Centre</ul>
+          </div>
       </div><!-- End SABP Box -->
 
       <div class="col-lg-12">
         <div class="sabp-box" data-aos="fade-up" data-aos-delay="300">
-          <h4>Participating Entities</h4>
+          <h4>Category of disciplines from which individuals can enrol for the program</h4>
           <ul>
-            <li>College of Health Sciences (CHS)</li>
-            <li>College of Agricultural and Environmental Sciences (CAES)</li>
-            <li>Makerere University Biological Field Station (MUBFS)</li>
-            <li>Uganda Wildlife Authority (UWA)</li>
-            <li>Uganda Wildlife Conservation Education Centre (UWEC)</li>
-            <li>African Union of Conservationists (AUC)</li>
-            <li>Reform Africa (RA)</li>
-            <li>JESA Farm</li>
-            <li>The Uganda Society for the Protection and Care of Animals (USPCA)</li>
-            <li>Dr. Naluyima's One Acre Farm</li>
-            <li>Victoria Treasures Fish Farm</li>
-            <li>Central Public Health Laboratories (CPHLs)</li>
-            <li>Kirudu Hospital, Kampala</li>
-            <li>National Animal Diseases and Epidemiology Centre (NADDEC)</li>
-            <li>Uganda Virus Research Institute (UVRI)</li>
-            <li>National Animal Genetics Resources and Data Bank (NAGR&DB)</li>
-            <li>Gorilla Doctors</li>
-            <li>Ndere Cultural Centre</li>
-            <!-- Add any other participating entities here -->
-          </ul>
-        </div>
-      </div><!-- End SABP Box -->
-
-      <div class="col-lg-12">
-        <div class="sabp-box" data-aos="fade-up" data-aos-delay="400">
-          <h4>Disciplines</h4>
-          <ul>
-            <li>Pre-vets</li>
+            <li>Biological sciences</li>
+            <li>Environmental sciences</li>
+            <li>Medical sciences</li>
+            <li>Veterinary sciences</li>
+            <li>Pre-Meds</li>
+            <li>Pre-Vets</li>
             <li>Veterinary medicine</li>
             <li>Biotechnology and biolab sciences</li>
             <li>Public health</li>
@@ -1211,21 +1381,104 @@ border-radius: 10px;
             <li>Wildlife sciences</li>
             <li>Aquatic sciences</li>
             <li>Food Sciences</li>
-            <li>Other related</li>
+            <!-- Add any other participating entities here -->
           </ul>
         </div>
       </div><!-- End SABP Box -->
 
+      
       <div class="col-lg-12">
         <div class="sabp-box" data-aos="fade-up" data-aos-delay="500">
           <h4>Program Cost</h4>
-          <ul>
-            <li>Four Weeks (28 days): $4,600 per head</li>
-            <li>Three Weeks (21 days): $4,100 per head</li>
-            <li>NB: For participants who wish to attend less than 3 weeks, a budget quote can be drawn according to the number of activities that can be accommodated within their chosen time frame.</li>
-            <li>Tailored student rotations</li>
-            <li>Work away</li>
-          </ul>
+          <table>
+    <thead>
+        <tr>
+            <th rowspan="2">Program Duration</th>
+            <th colspan="3">Payment per person based on group numbers (USD-$)</th>
+        </tr>
+        <tr>
+            <th>1-4 participants</th>
+            <th>4-6 participants</th>
+            <th>≥7 participants</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>14 days</td>
+            <td>$3,600 per head</td>
+            <td>$3,200 per head</td>
+            <td>$2,800 per head</td>
+        </tr>
+        <tr>
+            <td>21 days</td>
+            <td>$4,200</td>
+            <td>$3,800</td>
+            <td>$3,400</td>
+        </tr>
+        <tr>
+            <td>28 days</td>
+            <td>$4,600</td>
+            <td>$4,000</td>
+            <td>$3,600</td>
+        </tr>
+        <tr>
+            <td>35 days</td>
+            <td>$4,600</td>
+            <td>$4,000</td>
+            <td>$3,600</td>
+        </tr>
+        <tr>
+            <td colspan="4" style="text-align: left;">
+                <strong>Includes:</strong>
+                <ul>
+                    <li>• Airport pickup and drop off</li>
+                    <li>• Local transport</li>
+                    <li>• Accommodation</li>
+                    <li>• Meals (Breakfast, lunch and supper)</li>
+                    <li>• Payment of field training personnel</li>
+                    <li>• Entrance fees to facilities</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4" style="text-align: left;">
+                <strong>Excludes:</strong>
+                <ul>
+                    <li>• Any Private Expenses</li>
+                    <li>• Medical insurance</li>
+                    <li>• Air ticket</li>
+                    <li>• Alcohol</li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>NB: For participants who wish to attend less than 2 weeks, a budget quote can be drawn according to the number of activities that can be accommodated within their chosen time frame.</p>
+<style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+        }
+        ul li {
+            margin-bottom: 5px;
+        }
+    </style>
         </div>
       </div><!-- End SABP Box -->
     </div><!-- End Row -->
@@ -1533,7 +1786,7 @@ border-radius: 10px;
     window.intlTelInput(input, {
       initialCountry: "auto",
       geoIpLookup: function(callback) {
-        fetch('https://ipinfo.io/json?token=5273e3a3be1b22') // Use your own API token from ipinfo.io
+        fetch('https://ipinfo.io/json?token=5273e3a3be1b22')
           .then(response => response.json())
           .then(data => callback(data.country))
           .catch(() => callback('us'));
@@ -1832,11 +2085,71 @@ border-radius: 10px;
             });
           </script>
       </div>
-    </section><!-- End Contact Section -->
+    </section>
+    
+        <!-- Other sections of your website -->
+
+        <style>
+          .partners-section {
+              background-color: #f4f4f4;
+              padding: 20px;
+              text-align: center;
+          }
+          .partners-container {
+              display: flex;
+              justify-content: center;
+              flex-wrap: wrap;
+              gap: 20px;
+          }
+          .partners-container a {
+              display: block;
+              width: 150px;
+              height: 100px;
+              overflow: hidden;
+          }
+          .partners-container img {
+              width: 100%;
+              height: auto;
+              display: block;
+              object-fit: contain;
+              transition: transform 0.3s ease;
+          }
+          .partners-container img:hover {
+              transform: scale(1.1);
+          }
+      </style>
+        <section class="partners-section">
+          <h2>Our Partners</h2>
+          <div class="partners-container">
+              <a href="https://www.mak.ac.ug/" target="_blank" rel="noopener noreferrer">
+                  <img src="assets/logos/mak.png" alt="Partner 1">
+              </a>
+              <a href="https://ugandawildlife.org/" target="_blank" rel="noopener noreferrer">
+                  <img src="assets/logos/uma.jfif" alt="Partner 2">
+              </a>
+              <a href="https://uwec.ug/" target="_blank" rel="noopener noreferrer">
+                  <img src="assets/logos/uwcec.png" alt="Partner 3">
+              </a>
+              <a href="https://ngambaisland.org/" target="_blank" rel="noopener noreferrer">
+                  <img src="assets/logos/chimp_logo.png" alt="Partner 4">
+              </a>
+              <a href="https://afrucafrica.org/" target="_blank" rel="noopener noreferrer">
+                <img src="assets/logos/auc.jfif" alt="Partner 1">
+              </a>
+             <a href="https://www.gorilladoctors.org/" target="_blank" rel="noopener noreferrer">
+              <img src="assets/logos/gd.jfif" alt="Partner 1">
+              </a>
+              <a href="https://ugasaf.org/" target="_blank" rel="noopener noreferrer">
+                  <img src="assets/logos/usaga.png" alt="Partner 1">
+              </a>
+             
+              <!-- Add more partners as needed -->
+          </div>
+      </section>
+    <!-- End Contact Section -->
     <!-- <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
     <script src="https://mediafiles.botpress.cloud/09d47d47-5371-43f8-b290-55fbe8866a00/webchat/config.js" defer></script> -->
     
-
     <footer id="footer" class="footer">
 
       <div class="container footer-top">

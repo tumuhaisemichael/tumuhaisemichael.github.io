@@ -48,96 +48,87 @@
     </a>
 <!-- Nav Menu -->
 <nav id="navmenu" class="navmenu" >
-<ul style="text-align: center; padding-right: 200px;">
-  <li><a href="index.html#home-section" class="active" style="color: black;">Home</a></li>
-  <li class="dropdown has-dropdown horizontal-dropdown">
-    <a href="index.html#tailor-made-safaris">
-      <span style="color: black;">Destinations</span> <i class="bi bi-chevron-down"></i>
-    </a>
-    <ul class="dd-box-shadow">
-      <li><a href="uganda.html">Uganda</a></li>
-      <li><a href="kenya.html">Kenya</a></li>
-      <li><a href="tanzania.html">Tanzania</a></li>
-      <li><a href="rwanda.html">Rwanda</a></li>
-    </ul>
-  </li>
-  <li class="dropdown has-dropdown"><a href="index.html#services" style="color: black;"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
-    <ul class="dd-box-shadow">
-      <li><a href="index.html#tailor-made-safaris">Custom Expeditions</a></li>
-      <li><a href="index.html#medical-profession-expeditions">Medical Expeditions</a></li>
-      <li><a href="index.html#study-abroad-programs">Study Abroad</a></li>
-      <li class="dropdown has-dropdown"><a href="index.html#veterinary-profession-expeditions" style="color: black;"><span>Veterinary Expeditions</span> <i class="bi bi-chevron-down"></i></a>
-        <ul class="dd-box-shadow">
-          <li><a href="index.html#vet-ecological-safaris">Veterinary Ecological Safaris</a></li>
-          <li><a href="index.html#wildlife-immobilisation-course">Wildlife Immobilisation Course </a></li>
-          <li><a href="index.html#experiential-tourism">Experiential Tourism</a></li>
-          <li><a href="index.html#field-projects">Field Projects</a></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
- 
-  <li class="dropdown has-dropdown"><a href="index.html#tailor-made-safaris" style="color: black;"><span>Custom Expeditions</span> <i class="bi bi-chevron-down"></i></a>
-    <ul class="dd-box-shadow">
-      <li><a href="2day1.html">2-Day Expedition</a></li>
-      <li><a href="2day2.html">2-Day Expedition(Large Predators)</a></li>
-      <li><a href="4day1.html">4-Day Expedition(Explore Bwindi Impenetrable, Queen Elizabeth, and Kibale Forest National Parks)</a></li>
-      <li><a href="4day2.html">4-Day Expedition(Explore Murchison Falls and Kibale Forest National Parks)</a></li>
-      <li><a href="6day.html">6-Day Expedition(Explore Murchison Falls, Kibale Forest, Queen Elizabeth, and Lake Mburo National Parks) </a></li>
-      <li><a href="8day.html">8-Day Expedition(Explore Bwindi Impenetrable and Queen Elizabeth National Parks, Kibale Forest, and Murchison Falls, Kidepo National Parks)</a></li>
-      <li><a href="15day.html">15-Day Expedition(Across-Uganda Expedition)</a></li>
-    </ul>
-  </li>
+  <ul style="text-align: center; padding-right: 200px;">
+    <li><a href="index.html#home-section" class="active" style="color: black;">Home</a></li>
+    <li class="dropdown has-dropdown horizontal-dropdown">
+      <a href="index.html#tailor-made-safaris">
+        <span style="color: black;">Destinations</span> <i class="bi bi-chevron-down"></i>
+      </a>
+      <ul class="dd-box-shadow">
+        <li><a href="uganda.html">Uganda</a></li>
+        <li><a href="kenya.html">Kenya</a></li>
+        <li><a href="tanzania.html">Tanzania</a></li>
+        <li><a href="rwanda.html">Rwanda</a></li>
+      </ul>
+    </li>
+    <li class="dropdown has-dropdown"><a href="index.html#tailor-made-safaris" style="color: black;"><span>Custom Expeditions</span> <i class="bi bi-chevron-down"></i></a>
+      <ul class="dd-box-shadow">
+        <li><a href="2day1.html">2-Day Expedition</a></li>
+        <li><a href="2day2.html">2-Day Expedition(Large Predators)</a></li>
+        <li><a href="4day1.html">4-Day Expedition(Explore Bwindi Impenetrable, Queen Elizabeth, and Kibale Forest National Parks)</a></li>
+        <li><a href="4day2.html">4-Day Expedition(Explore Murchison Falls and Kibale Forest National Parks)</a></li>
+        <li><a href="6day.html">6-Day Expedition(Explore Murchison Falls, Kibale Forest, Queen Elizabeth, and Lake Mburo National Parks) </a></li>
+        <li><a href="8day.html">8-Day Expedition(Explore Bwindi Impenetrable and Queen Elizabeth National Parks, Kibale Forest, and Murchison Falls, Kidepo National Parks)</a></li>
+        <li><a href="7day.html">7-Day RWANDA-UGANDA Expedition </a></li>
+        <li><a href="15day.html">15-Day Expedition(Across-Uganda Expedition)</a></li>
+      </ul>
+    </li>
+    <li class="dropdown has-dropdown"><a href="index.html#veterinary-profession-expeditions" style="color: black;"><span>Vet Expeditions</span> <i class="bi bi-chevron-down"></i></a>
+      <ul class="dd-box-shadow">
+        <li><a href="index.html#vet-ecological-safaris">Veterinary Ecological Safaris</a></li>
+        <li><a href="index.html#wildlife-immobilisation-course">Wildlife Immobilisation Course </a></li>
+        <li><a href="index.html#experiential-tourism">Experiential Tourism</a></li>
+        <li><a href="index.html#field-projects">Field Projects</a></li>
+      </ul>
+    </li>
+    <li><a href="index.html#medical-profession-expeditions" style="color: black;">Med Expeditions</a></li>
+    <li><a href="index.html#study-abroad-programs" style="color: black;">Student Aboard</a></li>
+    <style>
+      .horizontal-dropdown ul {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        list-style: none;
+        white-space: nowrap;
+        width: 100vw; /* Use viewport width to fill the entire screen width */
+        margin: 0; /* Remove default margin */
+        padding: 0; /* Remove default padding */
+      }
+      
+      .horizontal-dropdown:hover ul,
+      .horizontal-dropdown:focus-within ul {
+        display: flex;
+        flex-direction: row;
+      }
+      
+      .horizontal-dropdown ul li {
+        display: inline-block;
+        border-right: 1px solid #ddd;
+      }
+      
+      .horizontal-dropdown ul li:last-child {
+        border-right: none;
+      }
+      
+      .horizontal-dropdown ul li a {
+        display: block;
+        padding: 10px;
+        color: #333;
+        text-decoration: none;
+      }
+      
+      .horizontal-dropdown ul li a:hover {
+        background-color: #f0f0f0;
+      }
+      </style>
+    <li><a href="index.html#contact" style="color: black;">Contact</a></li>
+  </ul>
   
-  <style>
-    .horizontal-dropdown ul {
-      display: none;
-      position: absolute;
-      left: 0;
-      top: 100%;
-      background-color: #fff;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      list-style: none;
-      white-space: nowrap;
-      width: 100vw; /* Use viewport width to fill the entire screen width */
-      margin: 0; /* Remove default margin */
-      padding: 0; /* Remove default padding */
-    }
-    
-    .horizontal-dropdown:hover ul,
-    .horizontal-dropdown:focus-within ul {
-      display: flex;
-      flex-direction: row;
-    }
-    
-    .horizontal-dropdown ul li {
-      display: inline-block;
-      border-right: 1px solid #ddd;
-    }
-    
-    .horizontal-dropdown ul li:last-child {
-      border-right: none;
-    }
-    
-    .horizontal-dropdown ul li a {
-      display: block;
-      padding: 10px;
-      color: #333;
-      text-decoration: none;
-    }
-    
-    .horizontal-dropdown ul li a:hover {
-      background-color: #f0f0f0;
-    }
-    </style>
-  <li><a href="index.html#gallery" style="color: black;">Gallery</a></li>
-  <li><a href="index.html#booking" style="color: black;">Booking</a></li>
-  <li><a href="index.html#team" style="color: black;">Team</a></li>
-  <li><a href="index.html#contact" style="color: black;">Contact</a></li>
-</ul>
-
-<i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-</nav><!-- End Nav Menu -->
+  <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+  </nav><!-- End Nav Menu -->
 
 </div>
 </header><!-- End Header -->
@@ -159,54 +150,64 @@
               <p>Uganda is home to several magnificent national parks that offer a wide variety of wildlife and breathtaking landscapes. Here are some of the most popular national parks:</p>
             <div class="park-container">
               <div class="mpe-box">
-                <img src="assets/15 day trip/15day10.jpg" alt="Serengeti" style="width: 200px; height: 200px; border-radius: 10px; float: left; margin-right: 20px;">
+                <img src="assets/destintations/uganda/bwinda.jfif" alt="Serengeti" style="width: 200px; height: 200px; border-radius: 10px; float: left; margin-right: 20px;">
                 <div class="park-info">
                   <strong>Bwindi Impenetrable National Park:</strong>
-                  <p>Bwindi Impenetrable National Park in Uganda is known for its mountain gorillas, offering exceptional gorilla trekking experiences. The park is also renowned for its rich biodiversity and lush rainforests.</p>
-              </div>
+                  <p>Bwindi Impenetrable National Park is a UNESCO World Heritage Site in southwestern Uganda, covering 321 square kilometers of dense forest and rugged terrain. It's renowned for its population of mountain gorillas, with nearly half of the world’s remaining mountain gorillas residing here. The park also boasts over 350 bird species, including rare ones like the African Green Broadbill. Besides gorillas and birds, visitors can spot chimpanzees, forest elephants, and various antelope species.</p>
+                </div>
               </div>
           </div> 
         </div>
       </div>
       <div class="park-item">
-          <img src="assets/15 day trip/15day10.jpg" alt="Ngorongoro" style="width: 200px; height: 200px; border-radius: 10px; float: left; margin-right: 20px;">
+          <img src="assets/destintations/uganda/elizabeth.jfif" alt="Ngorongoro" style="width: 200px; height: 200px; border-radius: 10px; float: left; margin-right: 20px;">
           <div class="park-info">
             <strong>Queen Elizabeth National Park:</strong>
-            <p>Queen Elizabeth National Park in Uganda is famous for its tree-climbing lions, diverse wildlife, and beautiful landscapes. It offers visitors unique safari experiences and is home to a wide variety of animals and bird species.</p>
+            <p>Queen Elizabeth National Park is located in western Uganda and covers about 1,978 square kilometers. Known for its diverse ecosystems, it includes savanna, wetlands, and forests. The park is famous for its large populations of wildlife and stunning landscapes.
+
+              And Queen Elizabeth National Park is home to over 95 mammal species, including elephants, lions, and buffaloes. It also boasts over 600 bird species, including the majestic African fish eagle and the rare shoebill stork. The park is known for its tree-climbing lions and abundant hippos in its many lakes and rivers.</p>
           </div>
         </div>
 
         <div class="park-item">
-          <img src="assets/img/uganda/murchison.jpg" alt="Murchison Falls" style="width: 200px; height: 200px; border-radius: 10px; float: left; margin-right: 20px;">
+          <img src="assets/destintations/uganda/murchison.jfif" alt="Murchison Falls" style="width: 200px; height: 200px; border-radius: 10px; float: left; margin-right: 20px;">
           <div class="park-info">
             <strong>Murchison Falls National Park:</strong>
-            <p>Murchison Falls National Park in Uganda is known for the powerful Murchison Falls, where the Nile River squeezes through a narrow gorge, creating a spectacular waterfall. The park boasts a rich variety of wildlife including elephants, giraffes, and lions, offering excellent game viewing opportunities.</p>
+            <p>
+              Murchison Falls National Park is Uganda's largest protected area, located in the northwest along the Nile River. It covers 3,893 square kilometers and features diverse landscapes, including savannahs, forests, and wetlands. The park is renowned for the dramatic Murchison Falls, where the Nile River squeezes through a narrow gorge.
+              
+              Wildlife includes a wide variety of species: the park is home to elephants, lions, giraffes, and buffaloes. It also hosts over 450 bird species, such as the rare Shoebill Stork. The park is a prime destination for game drives, boat safaris, and viewing the spectacular falls.</p>
           </div>
         </div>
         
 
         <div class="park-item">
-          <img src="assets/img/uganda/kibale.jpg" alt="Kibale Forest" style="width: 200px; height: 200px; border-radius: 10px; float: left; margin-right: 20px;">
+          <img src="assets/destintations/uganda/kibale.jfif" alt="Kibale Forest" style="width: 200px; height: 200px; border-radius: 10px; float: left; margin-right: 20px;">
           <div class="park-info">
             <strong>Kibale Forest National Park:</strong>
-            <p>Kibale Forest National Park in Uganda is famous for its chimpanzee trekking experiences. It boasts a rich diversity of primates, including chimpanzees, as well as a variety of bird species amidst its lush tropical rainforest.</p>
+            <p>Kibale Forest National Park is located in southwestern Uganda and spans 795 square kilometers of lush rainforest. It is renowned for its high concentration of primates, including over 1,500 chimpanzees, making it a prime destination for chimp tracking. The park also boasts an impressive 13 other primate species, such as the red colobus and black-and-white colobus monkeys. Additionally, Kibale is home to diverse bird species, including the endangered African Green Broadbill, and supports a range of other wildlife like forest elephants and various antelopes.</p>
           </div>
         </div>
         
 
         <div class="park-item">
-          <img src="assets/img/uganda/lake_mburo.jpg" alt="Lake Mburo" style="width: 200px; height: 200px; border-radius: 10px; float: left; margin-right: 20px;">
+          <img src="assets/destintations/uganda/mburo.jfif" alt="Lake Mburo" style="width: 200px; height: 200px; border-radius: 10px; float: left; margin-right: 20px;">
           <div class="park-info">
             <strong>Lake Mburo National Park:</strong>
-            <p>Lake Mburo National Park is located in western Uganda and is known for its scenic landscapes and rich biodiversity. The park offers visitors opportunities for boat trips on Lake Mburo, game drives to see zebras, giraffes, and antelopes, and excellent bird watching with over 300 bird species.</p>
+            <p>Lake Mburo National Park is located in southwestern Uganda, covering an area of 370 square kilometers (143 square miles). It features a diverse landscape of rolling hills, acacia woodlands, and a large lake. The park is known for its rich birdlife and is a popular destination for those interested in wildlife and scenic beauty.
+
+              And the park is home to a variety of animals, including zebras, impalas, elands, and topis. It also boasts over 350 bird species, such as the African fish eagle and the shoebill stork. Additionally, Lake Mburo supports hippos and crocodiles.</p>
           </div>
         </div>
 
         <div class="park-item">
-          <img src="assets/15 day trip/15day10.jpg" alt="Ngorongoro" style="width: 200px; height: 200px; border-radius: 10px; float: left; margin-right: 20px;">
+          <img src="assets/destintations/uganda/kidepo.jfif" alt="Ngorongoro" style="width: 200px; height: 200px; border-radius: 10px; float: left; margin-right: 20px;">
           <div class="park-info">
             <strong>Kidepo Valley National Park:</strong>
-            <p>Kidepo Valley National Park in Uganda is known for its rugged savannah landscapes and unique wildlife. It offers an authentic African wilderness experience, with sightings of lions, elephants, giraffes, and more.</p>
+            <p>
+              Kidepo Valley National Park is situated in the northeastern corner of Uganda, near the borders with South Sudan and Kenya. Covering approximately 1,442 square kilometers, it features diverse landscapes including savannahs, mountains, and valleys. The park is known for its remote and untouched beauty, providing a unique safari experience.
+              
+              And Kidepo Valley National Park is home to a variety of wildlife including lions, cheetahs, elephants, and giraffes. It is also a haven for rare species such as the ostrich and the endangered African wild dog. Birdwatchers can enjoy spotting over 470 bird species, including the beautiful Kori bustard.</p>
           </div>
         </div>
  
