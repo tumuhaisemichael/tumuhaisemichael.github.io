@@ -97,17 +97,38 @@
 <nav id="navmenu" class="navmenu" >
   <ul style="text-align: center; padding-right: 200px;">
     <li><a href="index.html#home-section" class="active">Home</a></li>
-    <li class="dropdown has-dropdown horizontal-dropdown">
+    <li class="dropdown has-dropdown  ">  <!--#horizontal-dropdown -->
       <a href="index.html#tailor-made-safaris">
         <span>Destinations</span> <i class="bi bi-chevron-down"></i>
       </a>
       <ul class="dd-box-shadow">
-        <li><a href="uganda.html">Uganda</a></li>
-        <li><a href="kenya.html">Kenya</a></li>
-        <li><a href="tanzania.html">Tanzania</a></li>
-        <li><a href="rwanda.html">Rwanda</a></li>
+        <li class="dropdown has-dropdown"><a href="uganda.html">Uganda</a>
+          <ul class="dd-box-shadow vertical-menu">
+            <li><a href="uganda.html">Parks</a></li>
+            <li><a href="Uni_Uganda.html">Universities</a></li>
+          </ul>
+        </li>
+        <li class="dropdown has-dropdown" ><a href="kenya.html">Kenya</a>
+          <ul>
+            <li><a href="kenya.html">Parks</a></li>
+            <li><a href="Uni_Kenya.html">Universities</a></li>
+          </ul>
+        </li>
+        <li class="dropdown has-dropdown"><a href="tanzania.html">Tanzania</a>
+          <ul>
+            <li><a href="tanzania.html">Parks</a></li>
+            <li><a href="Uni_Tz.html">Universities</a></li>
+          </ul>
+        </li>
+        <li class="dropdown has-dropdown"><a href="rwanda.html">Rwanda</a>
+          <ul>
+            <li><a href="rwanda.html">Parks</a></li>
+            <li><a href="Uni_Rwanda.html">Universities</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
+
     <li class="dropdown has-dropdown"><a href="index.html#tailor-made-safaris"><span>Custom Expeditions</span> <i class="bi bi-chevron-down"></i></a>
       <ul class="dd-box-shadow">
         <li><a href="2day1.html">2-Day Expedition</a></li>
@@ -130,8 +151,9 @@
     </li>
     <li><a href="index.html#medical-profession-expeditions">Med Expeditions</a></li>
     <li><a href="index.html#study-abroad-programs">Student Aboard</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
     <style>
-      .horizontal-dropdown ul {
+     .horizontal-dropdown ul {
         display: none;
         position: absolute;
         left: 0;
@@ -171,9 +193,7 @@
         background-color: #f0f0f0;
       }
       </style>
-    <li><a href="index.html#contact">Contact</a></li>
-  </ul>
-
+    
   <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
 </nav><!-- End Nav Menu -->
 
@@ -1646,7 +1666,7 @@ border-radius: 10px;
 </section><!-- End Field Projects Section -->
 
 <!-- Gallery Section - Gallery Page -->
-<section id="gallery" class="gallery">
+<!-- <section id="gallery" class="gallery">
   <div class="mpe-box" data-aos="fade-up">
     <div class="section-title">
       <h2>Our Gallery</h2>
@@ -1664,12 +1684,13 @@ border-radius: 10px;
           <a href="#lightbox6" class="gallery-link"><img src="assets/img/a1.JPG" alt="Image 6" class="img-fluid"></a>
           <a href="#lightbox7" class="gallery-link"><img src="assets/img/a1.JPG" alt="Image 7" class="img-fluid"></a>
           <a href="#lightbox8" class="gallery-link"><img src="assets/img/a1.JPG" alt="Image 8" class="img-fluid"></a>
-          <!-- Add more gallery items as needed -->
+          
         </div>
       </div>
     </div>
   </div>
-</section><!-- End Gallery Section -->
+</section> -->
+<!-- End Gallery Section -->
 
 
 <style>
