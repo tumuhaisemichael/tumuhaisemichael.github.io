@@ -94,34 +94,43 @@
         <span></span>
       </a>
  <!-- Nav Menu -->
-<nav id="navmenu" class="navmenu" >
+ <nav id="navmenu" class="navmenu">
   <ul style="text-align: center; padding-right: 200px;">
     <li><a href="index.html#home-section" class="active">Home</a></li>
-    <li class="dropdown has-dropdown  ">  <!--#horizontal-dropdown -->
-      <a href="index.html#tailor-made-safaris">
+    
+    <li class="dropdown has-dropdown horizontal-dropdown">
+      <a href="index.html#destinations">
         <span>Destinations</span> <i class="bi bi-chevron-down"></i>
       </a>
-      <ul class="dd-box-shadow">
-        <li class="dropdown has-dropdown"><a href="uganda.html">Uganda</a>
+      <ul class="dd-box-shadow horizontal-menu">
+        <!-- Uganda Dropdown -->
+        <li class="dropdown has-dropdown">
+          <a href="uganda.html">Uganda</a>
           <ul class="dd-box-shadow vertical-menu">
             <li><a href="uganda.html">Parks</a></li>
             <li><a href="Uni_Uganda.html">Universities</a></li>
           </ul>
         </li>
-        <li class="dropdown has-dropdown" ><a href="kenya.html">Kenya</a>
-          <ul>
+        <!-- Kenya Dropdown -->
+        <li class="dropdown has-dropdown">
+          <a href="kenya.html">Kenya</a>
+          <ul class="dd-box-shadow vertical-menu">
             <li><a href="kenya.html">Parks</a></li>
             <li><a href="Uni_Kenya.html">Universities</a></li>
           </ul>
         </li>
-        <li class="dropdown has-dropdown"><a href="tanzania.html">Tanzania</a>
-          <ul>
+        <!-- Tanzania Dropdown -->
+        <li class="dropdown has-dropdown">
+          <a href="tanzania.html">Tanzania</a>
+          <ul class="dd-box-shadow vertical-menu">
             <li><a href="tanzania.html">Parks</a></li>
             <li><a href="Uni_Tz.html">Universities</a></li>
           </ul>
         </li>
-        <li class="dropdown has-dropdown"><a href="rwanda.html">Rwanda</a>
-          <ul>
+        <!-- Rwanda Dropdown -->
+        <li class="dropdown has-dropdown">
+          <a href="rwanda.html">Rwanda</a>
+          <ul class="dd-box-shadow vertical-menu">
             <li><a href="rwanda.html">Parks</a></li>
             <li><a href="Uni_Rwanda.html">Universities</a></li>
           </ul>
@@ -129,73 +138,114 @@
       </ul>
     </li>
 
-    <li class="dropdown has-dropdown"><a href="index.html#tailor-made-safaris"><span>Custom Expeditions</span> <i class="bi bi-chevron-down"></i></a>
+    <li class="dropdown has-dropdown">
+      <a href="index.html#tailor-made-safaris">
+        <span>Custom Expeditions</span> <i class="bi bi-chevron-down"></i>
+      </a>
       <ul class="dd-box-shadow">
         <li><a href="2day1.html">2-Day Expedition</a></li>
-        <li><a href="2day2.html">2-Day Expedition(Large Predators)</a></li>
-        <li><a href="4day1.html">4-Day Expedition(Explore Bwindi Impenetrable, Queen Elizabeth, and Kibale Forest National Parks)</a></li>
-        <li><a href="4day2.html">4-Day Expedition(Explore Murchison Falls and Kibale Forest National Parks)</a></li>
-        <li><a href="6day.html">6-Day Expedition(Explore Murchison Falls, Kibale Forest, Queen Elizabeth, and Lake Mburo National Parks) </a></li>
-        <li><a href="8day.html">8-Day Expedition(Explore Bwindi Impenetrable and Queen Elizabeth National Parks, Kibale Forest, and Murchison Falls, Kidepo National Parks)</a></li>
-        <li><a href="7day.html">7-Day RWANDA-UGANDA Expedition </a></li>
-        <li><a href="15day.html">15-Day Expedition(Across-Uganda Expedition)</a></li>
+        <li><a href="2day2.html">2-Day Expedition (Large Predators)</a></li>
+        <li><a href="4day1.html">4-Day Expedition (Explore Bwindi Impenetrable, Queen Elizabeth, and Kibale Forest National Parks)</a></li>
+        <li><a href="4day2.html">4-Day Expedition (Explore Murchison Falls and Kibale Forest National Parks)</a></li>
+        <li><a href="6day.html">6-Day Expedition (Explore Murchison Falls, Kibale Forest, Queen Elizabeth, and Lake Mburo National Parks)</a></li>
+        <li><a href="8day.html">8-Day Expedition (Explore Bwindi Impenetrable and Queen Elizabeth National Parks, Kibale Forest, and Murchison Falls, Kidepo National Parks)</a></li>
+        <li><a href="7day.html">7-Day Rwanda-Uganda Expedition</a></li>
+        <li><a href="15day.html">15-Day Expedition (Across-Uganda Expedition)</a></li>
       </ul>
     </li>
-    <li class="dropdown has-dropdown"><a href="index.html#veterinary-profession-expeditions"><span>Vet Expeditions</span> <i class="bi bi-chevron-down"></i></a>
+
+    <li class="dropdown has-dropdown">
+      <a href="index.html#veterinary-profession-expeditions">
+        <span>Vet Expeditions</span> <i class="bi bi-chevron-down"></i>
+      </a>
       <ul class="dd-box-shadow">
         <li><a href="index.html#vet-ecological-safaris">Veterinary Ecological Safaris</a></li>
-        <li><a href="index.html#wildlife-immobilisation-course">Wildlife Immobilisation Course </a></li>
+        <li><a href="index.html#wildlife-immobilisation-course">Wildlife Immobilisation Course</a></li>
         <li><a href="index.html#experiential-tourism">Experiential Tourism</a></li>
         <li><a href="index.html#field-projects">Field Projects</a></li>
       </ul>
     </li>
-    <li><a href="index.html#medical-profession-expeditions">Med Expeditions</a></li>
-    <li><a href="index.html#study-abroad-programs">Student Aboard</a></li>
-    <li><a href="gallery.html">Gallery</a></li>
-    <style>
-     .horizontal-dropdown ul {
-        display: none;
-        position: absolute;
-        left: 0;
-        top: 100%;
-        background-color: #fff;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        list-style: none;
-        white-space: nowrap;
-        width: 100vw; /* Use viewport width to fill the entire screen width */
-        margin: 0; /* Remove default margin */
-        padding: 0; /* Remove default padding */
-      }
-      
-      .horizontal-dropdown:hover ul,
-      .horizontal-dropdown:focus-within ul {
-        display: flex;
-        flex-direction: row;
-      }
-      
-      .horizontal-dropdown ul li {
-        display: inline-block;
-        border-right: 1px solid #ddd;
-      }
-      
-      .horizontal-dropdown ul li:last-child {
-        border-right: none;
-      }
-      
-      .horizontal-dropdown ul li a {
-        display: block;
-        padding: 10px;
-        color: #333;
-        text-decoration: none;
-      }
-      
-      .horizontal-dropdown ul li a:hover {
-        background-color: #f0f0f0;
-      }
-      </style>
     
+    <li><a href="index.html#medical-profession-expeditions">Med Expeditions</a></li>
+    <li><a href="index.html#study-abroad-programs">Student Abroad</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+  </ul>
+
   <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-</nav><!-- End Nav Menu -->
+
+  <style>
+    /* Styles for the horizontal dropdown */
+    .horizontal-menu {
+      display: flex;
+      position: absolute;
+      left: 0;
+      top: 100%;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .horizontal-menu > li {
+      position: relative;
+    }
+
+    .horizontal-menu > li > a {
+      display: block;
+      padding: 10px;
+      color: #333;
+      text-decoration: none;
+    }
+
+    .horizontal-menu > li > a:hover {
+      background-color: #f0f0f0;
+    }
+
+    .vertical-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .vertical-menu li {
+      border-bottom: 1px solid #ddd;
+    }
+
+    .vertical-menu li:last-child {
+      border-bottom: none;
+    }
+
+    .vertical-menu li a {
+      display: block;
+      padding: 10px;
+      color: #333;
+      text-decoration: none;
+    }
+
+    .vertical-menu li a:hover {
+      background-color: #f0f0f0;
+    }
+
+    /* Show vertical menu on hover */
+    .dropdown:hover .vertical-menu {
+      display: block;
+    }
+
+    /* Show horizontal menu on hover */
+    .horizontal-dropdown:hover .horizontal-menu {
+      display: flex;
+    }
+  </style>
+</nav>
+
+ <!-- End Nav Menu -->
 
 </div>
 </header><!-- End Header -->
@@ -792,6 +842,64 @@ border-radius: 10px;
         </div>
       </div>
     </section>
+    <style>
+      /* Responsive styles */
+@media (max-width: 1200px) {
+  .containerh {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .left {
+    padding: 10px;
+  }
+
+  .typewriter h1 {
+    font-size: 1em; /* Adjust size for medium screens */
+  }
+
+  h3 {
+    font-size: 1em;
+  }
+
+  ul.services-list li {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 768px) {
+  .typewriter h1 {
+    font-size: 1em; /* Adjust size for smaller screens */
+  }
+
+  h3 {
+    font-size: 1em;
+  }
+
+  ul.services-list li {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 576px) {
+  .typewriter h1 {
+    font-size: 1em; /* Adjust size for very small screens */
+  }
+
+  h3 {
+    font-size: 1em;
+  }
+
+  ul.services-list li {
+    font-size: 0.8em;
+  }
+
+  .containerh {
+    padding: 0 10px;
+  }
+}
+    </style>
 
     <!-- <section id="moving-images-section">
       <div class="moving-images">
@@ -875,10 +983,64 @@ border-radius: 10px;
   .navigation-auto div.active {
       background-color: white;
   }
-  @media (max-width: 800px) {
+  /* Responsive styles */
+@media (max-width: 1200px) {
+  .slides img {
+    height: 500px; /* Adjust for medium screens */
+  }
+}
+
+@media (max-width: 992px) {
+  .slides img {
+    height: 400px; /* Adjust for smaller screens */
+  }
+
+  .navigation-button {
+    font-size: 20px;
+    padding: 8px;
+  }
+
+  .auto-btn {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .slides img {
+    height: 300px; /* Adjust for mobile screens */
+  }
+
+  .navigation-button {
+    font-size: 18px;
+    padding: 6px;
+  }
+
+  .auto-btn {
+    width: 6px;
+    height: 6px;
+  }
+}
+
+@media (max-width: 576px) {
+  .slides img {
+    height: 200px; /* Full-width on very small screens */
+  }
+
+  .navigation-button {
+    font-size: 16px;
+    padding: 5px;
+  }
+
+  .auto-btn {
+    width: 5px;
+    height: 5px;
+  }
+}
+  /* @media (max-width: 800px) {
             .slider {
                 max-width: 100%;
-            }
+            } */
 
 </style>
 
@@ -887,7 +1049,6 @@ border-radius: 10px;
       <div class="slides">
         <a href="image1.html"><img src="assets/move/move2.jpg" alt="Image 1"></a>
         <a href="image1.html"><img src="assets/move/move3.jpg" alt="Image 1"></a>
-        <a href="image1.html"><img src="assets/move/move1.jpg" alt="Image 1"></a>
         <a href="image1.html"><img src="assets/move/move4.jpg" alt="Image 1"></a>
         <a href="image1.html"><img src="assets/move/move5.jpg" alt="Image 1"></a>
         <a href="image1.html"><img src="assets/move/move6.jpg" alt="Image 1"></a>
@@ -897,7 +1058,6 @@ border-radius: 10px;
         <a href="image1.html"><img src="assets/move/move10.jpg" alt="Image 1"></a>
         <a href="image1.html"><img src="assets/move/move11.jpg" alt="Image 1"></a>
         <a href="image1.html"><img src="assets/move/move12.jpg" alt="Image 1"></a>
-        <a href="image1.html"><img src="assets/move/move13.jpg" alt="Image 1"></a>
         <a href="image1.html"><img src="assets/move/move14.jfif" alt="Image 1"></a>
         <a href="image1.html"><img src="assets/move/move15.jfif" alt="Image 1"></a>
         <a href="image1.html"><img src="assets/move/move16.jfif" alt="Image 1"></a>
@@ -2204,7 +2364,8 @@ border-radius: 10px;
             <p>Uganda</p>
             <p class="mt-4"><strong>Phone:</strong> <span><p>+256 777 370494</p>
               <p>+256 787 109542</p></span></p>
-            <p><strong>Email:</strong> <span>expertexpeditionz@gmail.com</span></p>
+            <p><strong>Email:</strong> <span>info@expertfieldexpeditions.com
+            </span></p>
           </div>
   
         </div>
