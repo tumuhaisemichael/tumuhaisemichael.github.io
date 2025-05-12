@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contributors - RouteWise Blog</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>tailwind.config={theme:{extend:{colors:{primary:'#3b82f6',secondary:'#10b981'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 flex items-center justify-between h-16">
+            <div class="flex items-center">
+                <a href="index.html" class="flex items-center">
+                    <span class="text-2xl font-['Pacifico'] text-primary">RouteWise</span>
+                </a>
+                <nav class="hidden md:flex ml-10 space-x-8">
+                    <a href="index.html" class="text-gray-500 hover:text-primary transition">Home</a>
+                    <a href="articles.html" class="text-gray-500 hover:text-primary transition">Articles</a>
+                    <a href="contributors.html" class="text-gray-900 font-medium hover:text-primary transition">Contributors</a>
+                    <a href="about.html" class="text-gray-500 hover:text-primary transition">About</a>
+                    <a href="blog-view.html" class="text-gray-500 hover:text-primary transition">Blog View</a>
+                </nav>
+            </div>
+            <div class="flex items-center space-x-4">
+                <div class="relative hidden md:block">
+                    <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                        <i class="ri-search-line w-5 h-5 text-gray-400"></i>
+                    </div>
+                    <input type="text" class="bg-gray-100 border-none text-sm rounded-full pl-10 pr-4 py-2 w-64 focus:outline-none focus:ring-2 focus:ring-primary/20" placeholder="Search articles...">
+                </div>
+                <button class="bg-primary text-white px-4 py-2 rounded-button font-medium hover:bg-primary/90 transition">Log In</button>
+                <button class="md:hidden w-10 h-10 flex items-center justify-center text-gray-500"><i class="ri-menu-line ri-lg"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl font-bold text-gray-900 mb-8">Our Contributors</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8" id="contributors-list">
+                <!-- Contributors populated by script.js -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <a href="index.html" class="inline-block mb-6"><span class="text-2xl font-['Pacifico'] text-white">RouteWise</span></a>
+                    <p class="text-gray-400 mb-6">Making school transportation safer, more efficient, and more transparent for schools, parents, and students.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition"><i class="ri-twitter-fill"></i></a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition"><i class="ri-facebook-fill"></i></a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition"><i class="ri-linkedin-fill"></i></a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition"><i class="ri-instagram-fill"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="articles.html" class="text-gray-400 hover:text-white transition">Articles</a></li>
+                        <li><a href="contributors.html" class="text-gray-400 hover:text-white transition">Contributors</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition">About RouteWise</a></li>
+                        <li><a href="blog-view.html" class="text-gray-400 hover:text-white transition">Blog View</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Categories</h3>
+                    <ul class="space-y-3">
+                        <li><a href="articles.html" class="text-gray-400 hover:text-white transition">School Transportation</a></li>
+                        <li><a href="articles.html" class="text-gray-400 hover:text-white transition">Safety Updates</a></li>
+                        <li><a href="articles.html" class="text-gray-400 hover:text-white transition">Technology Insights</a></li>
+                        <li><a href="articles.html" class="text-gray-400 hover:text-white transition">Weather Reports</a></li>
+                        <li><a href="articles.html" class="text-gray-400 hover:text-white transition">Traffic Analysis</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Contact</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start"><i class="ri-map-pin-line w-5 h-5 text-gray-400 mt-0.5"></i><span class="ml-3 text-gray-400">123 Innovation Drive, San Francisco, CA 94103</span></li>
+                        <li class="flex items-start"><i class="ri-mail-line w-5 h-5 text-gray-400 mt-0.5"></i><span class="ml-3 text-gray-400">blog@routewise.com</span></li>
+                        <li class="flex items-start"><i class="ri-phone-line w-5 h-5 text-gray-400 mt-0.5"></i><span class="ml-3 text-gray-400">(555) 123-4567</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 mb-4 md:mb-0">© 2025 RouteWise. All rights reserved.</p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-white transition">Privacy Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">Terms of Service</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
