@@ -721,7 +721,7 @@ async function fetchData() {
 
 async function saveData() {
   try {
-    const response = await fetch('http://localhost:3000/api/data', {
+    const response = await fetch('/data.json', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data)
