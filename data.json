@@ -46,115 +46,156 @@
   ],
   "posts": [
     {
-      "id": "post1",
-      "contributorId": "michael",
-      "title": "Looking For Data Sources",
-      "content": "Looking For Data Sources",
-      "image": "",
-      "file": null,
-      "date": "2025-05-07"
+      "id": "michael",
+      "name": "Michael",
+      "email": "michael@gmail.com",
+      "role": "Content Creator",
+      "activities": [
+        {
+          "phase": "Data Collection",
+          "start": "2024-09-12",
+          "end": "2024-09-25",
+          "details": "Researched and documented various data sources including crash reports, road segment data, and weather logs. Participated in field visits to government agencies and schools. From Uganda Road Fund and UNRA, obtained data on road conditions and maintenance schedules. KCCA provided city traffic congestion patterns and enforcement records. The Ministry of Works and Transport shared national transportation policies and road safety programs. At Sir Apollo Kagwa School, we engaged with the ACT (Association for Children Transporters) to understand current school transport challenges and collect feedback on route safety."
+        },
+        {
+          "phase": "SRS",
+          "start": "2024-10-11",
+          "end": "2024-10-18",
+          "details": "Drafted functional and non-functional requirements based on user needs."
+        },
+        {
+          "phase": "SDD",
+          "start": "2024-11-01",
+          "end": "2024-11-10",
+          "details": "Created wireframes and UI mockups for the dashboard and user interface."
+        },
+        {
+          "phase": "Implementation",
+          "start": "2025-02-01",
+          "end": "2025-02-28",
+          "details": "Developed the front-end using React, including interactive map components."
+        },
+        {
+          "phase": "Testing",
+          "start": "2025-03-16",
+          "end": "2025-04-05",
+          "details": "Led UI/UX testing and gathered user feedback for improvements."
+        }
+      ]
     },
     {
-      "id": "post2",
-      "contributorId": "michael",
-      "title": "Loading for Data Sources ",
-      "content": "Loading for Data Sources ",
-      "image": "",
-      "file": null,
-      "date": "2025-05-07"
+      "id": "silver",
+      "name": "Silver",
+      "email": "silver@gmail.com",
+      "role": "Safety Analyst",
+      "activities": [
+        {
+          "phase": "Data Collection",
+          "start": "2024-09-13",
+          "end": "2024-09-30",
+          "details": "Gathered safety-related data from national road safety authorities and filtered high-risk zones. Collected accident frequency and location reports from UNRA and Ministry of Works and Transport. Obtained enforcement and incident data from KCCA. Interviewed ACT members at Sir Apollo Kagwa School about safety practices and their main transport risks."
+        },
+        {
+          "phase": "SRS",
+          "start": "2024-10-15",
+          "end": "2024-10-22",
+          "details": "Defined safety use cases and constraints related to road risk prediction."
+        },
+        {
+          "phase": "SDD",
+          "start": "2024-11-05",
+          "end": "2024-11-15",
+          "details": "Helped define the system’s safety risk model architecture."
+        },
+        {
+          "phase": "Implementation",
+          "start": "2025-02-01",
+          "end": "2025-02-20",
+          "details": "Implemented the safety analysis logic and rule-based classification."
+        },
+        {
+          "phase": "Testing",
+          "start": "2025-03-20",
+          "end": "2025-04-10",
+          "details": "Validated risk classifications against safety benchmarks."
+        }
+      ]
     },
     {
-      "id": "post3",
-      "contributorId": "michael",
-      "title": "Getting Directions",
-      "content": "Getting Directions",
-      "image": "blob:http://localhost:3000/beb1e922-6960-4f3f-ab76-6b1d55cd4e8c",
-      "file": null,
-      "date": "2025-05-13"
+      "id": "ena",
+      "name": "Ena",
+      "email": "ena@gmail.com",
+      "role": "Traffic Specialist",
+      "activities": [
+        {
+          "phase": "Data Collection",
+          "start": "2024-09-15",
+          "end": "2024-10-10",
+          "details": "Collected traffic flow and congestion data from Google Maps APIs and public datasets. Visited KCCA for real-time traffic signal data and congestion reports. Collaborated with ACT members to understand peak hour school transport challenges."
+        },
+        {
+          "phase": "SRS",
+          "start": "2024-10-18",
+          "end": "2024-10-25",
+          "details": "Outlined performance and data accuracy requirements."
+        },
+        {
+          "phase": "SDD",
+          "start": "2024-11-10",
+          "end": "2024-11-20",
+          "details": "Designed backend components responsible for traffic and road analysis."
+        },
+        {
+          "phase": "Implementation",
+          "start": "2025-02-05",
+          "end": "2025-02-28",
+          "details": "Trained machine learning models using crash and traffic data."
+        },
+        {
+          "phase": "Testing",
+          "start": "2025-03-25",
+          "end": "2025-04-20",
+          "details": "Performed model validation using confusion matrices and AUC scores."
+        }
+      ]
     },
     {
-      "id": "post4",
-      "contributorId": "michael",
-      "title": "Testing ",
-      "content": "Just Testing",
-      "image": "blob:http://localhost:3000/9be7c649-4726-47d1-943d-ebe35ef145fb",
-      "file": null,
-      "date": "2025-05-11"
-    },
-    {
-      "id": "post5",
-      "contributorId": "michael",
-      "title": "Testing ",
-      "content": "just testing",
-      "image": "",
-      "file": {
-        "name": "Professional_CV.pdf",
-        "url": "blob:http://localhost:3000/ff0aa47c-4682-423b-b9c2-f0c7e648b170"
-      },
-      "date": "2025-05-11"
-    },
-    {
-      "id": "post6",
-      "contributorId": "silver",
-      "title": "Testing ",
-      "content": "Just",
-      "image": "",
-      "file": null,
-      "date": "2025-05-11"
-    },
-    {
-      "id": "post7",
-      "contributorId": "ena",
-      "title": "Testing ENA",
-      "content": "just testing",
-      "image": "",
-      "file": null,
-      "date": "2025-05-11"
-    },
-    {
-      "id": "post8",
-      "contributorId": "trevor",
-      "title": "Testing Trevor",
-      "content": "just",
-      "image": "",
-      "file": null,
-      "date": "2025-05-11"
-    },
-    {
-      "id": "post9",
-      "contributorId": "silver",
-      "title": "IT work",
-      "content": "testing",
-      "image": "",
-      "file": null,
-      "date": "2025-05-11"
-    },
-    {
-      "id": "post10",
-      "contributorId": "michael",
-      "title": "Loading for Data Sources ",
-      "content": "Testing 3",
-      "image": "",
-      "file": null,
-      "date": "2025-05-11"
-    },
-       {
-      "id": "post11",
-      "contributorId": "michael",
-      "title": "Loading for Data Sources and input just ",
-      "content": "Testing 7",
-      "image": "",
-      "file": null,
-      "date": "2025-05-14"
-    },
-    {
-      "id": "post12",
-      "contributorId": "ena",
-      "title": "Loading for Data from the back ",
-      "content": "Testing 11",
-      "image": "",
-      "file": null,
-      "date": "2025-05-14"
+      "id": "trevor",
+      "name": "Trevor",
+      "email": "trevor@gmail.com",
+      "role": "Route Planner",
+      "activities": [
+        {
+          "phase": "Data Collection",
+          "start": "2024-09-14",
+          "end": "2024-10-05",
+          "details": "Focused on identifying geospatial data for mapping and road segment labeling. Sourced GIS road network files from UNRA and KCCA. Noted important access points and drop zones from ACT discussions at Sir Apollo Kagwa School."
+        },
+        {
+          "phase": "SRS",
+          "start": "2024-10-22",
+          "end": "2024-10-31",
+          "details": "Mapped system inputs/outputs and created data flow diagrams."
+        },
+        {
+          "phase": "SDD",
+          "start": "2024-11-15",
+          "end": "2024-11-30",
+          "details": "Planned geospatial mapping integration and route optimization modules."
+        },
+        {
+          "phase": "Implementation",
+          "start": "2025-02-10",
+          "end": "2025-03-15",
+          "details": "Integrated optimized route generation algorithms with real-time APIs."
+        },
+        {
+          "phase": "Testing",
+          "start": "2025-04-01",
+          "end": "2025-05-05",
+          "details": "Tested route optimization performance under different traffic scenarios."
+        }
+      ]
     }
   ],
   "ratings": {},
