@@ -45,115 +45,222 @@
     }
   ],
   "posts": [
-      {
-        "id": "post1",
-        "contributorId": "michael",
-        "title": "Data Collection Activities",
-        "content": "Researched and documented various data sources including crash reports, road segment data, and weather logs. Participated in field visits to government agencies and schools. From Uganda Road Fund and UNRA, obtained data on road conditions and maintenance schedules. KCCA provided city traffic congestion patterns and enforcement records. The Ministry of Works and Transport shared national transportation policies and road safety programs. At Sir Apollo Kagwa School, we engaged with the ACT (Association for Children Transporters) to understand current school transport challenges and collect feedback on route safety.",
-        "image": "",
-        "file": null,
-        "date": "2024-09-25"
-      },
-      {
-        "id": "post2",
-        "contributorId": "silver",
-        "title": "Road Safety Data Collection",
-        "content": "Gathered safety-related data from national road safety authorities and filtered high-risk zones. Collected accident frequency and location reports from UNRA and Ministry of Works and Transport. Obtained enforcement and incident data from KCCA. Interviewed ACT members at Sir Apollo Kagwa School about safety practices and their main transport risks.",
-        "image": "",
-        "file": null,
-        "date": "2024-09-30"
-      },
-      {
-        "id": "post3",
-        "contributorId": "ena",
-        "title": "Traffic Data Gathering",
-        "content": "Collected traffic flow and congestion data from Google Maps APIs and public datasets. Visited KCCA for real-time traffic signal data and congestion reports. Collaborated with ACT members to understand peak hour school transport challenges.",
-        "image": "",
-        "file": null,
-        "date": "2024-10-10"
-      },
-      {
-        "id": "post4",
-        "contributorId": "trevor",
-        "title": "Geospatial Data Collection",
-        "content": "Focused on identifying geospatial data for mapping and road segment labeling. Sourced GIS road network files from UNRA and KCCA. Noted important access points and drop zones from ACT discussions at Sir Apollo Kagwa School.",
-        "image": "",
-        "file": null,
-        "date": "2024-10-05"
-      },
-      {
-        "id": "post5",
-        "contributorId": "michael",
-        "title": "System Requirements Specification (SRS)",
-        "content": "Led the documentation of functional and non-functional requirements for the Road Risk Prediction System. This included defining user goals, system features such as crash risk estimation, performance needs, and usability constraints. The SRS ensured the system would be aligned with stakeholder expectations, especially focusing on real-time responsiveness and user-friendly outputs.",
-        "image": "",
-        "file": null,
-        "date": "2024-10-18"
-      },
-      {
-        "id": "post6",
-        "contributorId": "silver",
-        "title": "Safety Use Cases in SRS",
-        "content": "Outlined use cases and constraints in the SRS with a focus on road safety. Designed scenarios showing how different actors (e.g., transport authorities, parents) interact with the system. Special attention was given to high-risk zone detection, which helped shape safety-related functional requirements.",
-        "image": "",
-        "file": null,
-        "date": "2024-10-22"
-      },
-      {
-        "id": "post7",
-        "contributorId": "ena",
-        "title": "Performance and Accuracy Requirements",
-        "content": "Defined the system's accuracy expectations and performance thresholds in the SRS. This included how fast the system should respond, the acceptable error rate in predictions, and how frequently live traffic or crash data should be refreshed. The requirements formed the basis for model validation criteria.",
-        "image": "",
-        "file": null,
-        "date": "2024-10-25"
-      },
-      {
-        "id": "post8",
-        "contributorId": "trevor",
-        "title": "Data Inputs and Outputs Mapping",
-        "content": "Mapped key data inputs like crash reports, GPS logs, and road segment metadata, and defined outputs such as predicted risk levels and optimized safe routes. Created data flow diagrams to show system interactions. This helped define the boundaries and dependencies for the SRS.",
-        "image": "",
-        "file": null,
-        "date": "2024-10-31"
-      },
-      {
-        "id": "post9",
-        "contributorId": "michael",
-        "title": "User Interface Design in SDD",
-        "content": "Designed wireframes and UI mockups for the web dashboard and mobile views. Focused on displaying risk zones on an interactive map, and simplifying user workflows for route suggestions. Also ensured responsive layout and visual clarity using accessible color schemes for risk indication.",
-        "image": "",
-        "file": null,
-        "date": "2024-11-10"
-      },
-      {
-        "id": "post10",
-        "contributorId": "silver",
-        "title": "System Architecture Design",
-        "content": "Worked on the architectural design of the system. Split the platform into frontend, backend services, ML engine, and database layers. Created UML component diagrams showing how data flows between modules and services. Ensured modularity for ease of maintenance and scalability.",
-        "image": "",
-        "file": null,
-        "date": "2024-11-15"
-      },
-      {
-        "id": "post11",
-        "contributorId": "ena",
-        "title": "Backend and Data Design",
-        "content": "Defined the database schema including crash reports, road segments, user feedback, and prediction results. Also helped design backend services that would handle data ingestion, model invocation, and user API requests. Structured endpoints and mapped expected request-response cycles.",
-        "image": "",
-        "file": null,
-        "date": "2024-11-20"
-      },
-      {
-        "id": "post12",
-        "contributorId": "trevor",
-        "title": "Geospatial Design and Routing Logic",
-        "content": "Planned how GPS data, road segment coordinates, and risk scores would be integrated for real-time route planning. Designed logic to overlay crash data on maps and dynamically adjust routes. Considered using GIS libraries and APIs for real-time mapping and navigation rendering.",
-        "image": "",
-        "file": null,
-        "date": "2024-11-30"
-      }
-    
+    {
+      "id": "post1",
+      "contributorId": "michael",
+      "title": "Data Collection Activities",
+      "content": "Researched and documented various data sources including crash reports, road segment data, and weather logs. Participated in field visits to government agencies and schools. From Uganda Road Fund and UNRA, obtained data on road conditions and maintenance schedules. KCCA provided city traffic congestion patterns and enforcement records. The Ministry of Works and Transport shared national transportation policies and road safety programs. At Sir Apollo Kagwa School, we engaged with the ACT (Association for Children Transporters) to understand current school transport challenges and collect feedback on route safety.",
+      "image": "",
+      "file": null,
+      "date": "2024-09-25"
+    },
+    {
+      "id": "post2",
+      "contributorId": "silver",
+      "title": "Road Safety Data Collection",
+      "content": "Gathered safety-related data from national road safety authorities and filtered high-risk zones. Collected accident frequency and location reports from UNRA and Ministry of Works and Transport. Obtained enforcement and incident data from KCCA. Interviewed ACT members at Sir Apollo Kagwa School about safety practices and their main transport risks.",
+      "image": "",
+      "file": null,
+      "date": "2024-09-30"
+    },
+    {
+      "id": "post3",
+      "contributorId": "ena",
+      "title": "Traffic Data Gathering",
+      "content": "Collected traffic flow and congestion data from Google Maps APIs and public datasets. Visited KCCA for real-time traffic signal data and congestion reports. Collaborated with ACT members to understand peak hour school transport challenges.",
+      "image": "",
+      "file": null,
+      "date": "2024-10-10"
+    },
+    {
+      "id": "post4",
+      "contributorId": "trevor",
+      "title": "Geospatial Data Collection",
+      "content": "Focused on identifying geospatial data for mapping and road segment labeling. Sourced GIS road network files from UNRA and KCCA. Noted important access points and drop zones from ACT discussions at Sir Apollo Kagwa School.",
+      "image": "",
+      "file": null,
+      "date": "2024-10-05"
+    },
+    {
+      "id": "post5",
+      "contributorId": "michael",
+      "title": "System Requirements Specification (SRS)",
+      "content": "Led the documentation of functional and non-functional requirements for the Road Risk Prediction System. This included defining user goals, system features such as crash risk estimation, performance needs, and usability constraints. The SRS ensured the system would be aligned with stakeholder expectations, especially focusing on real-time responsiveness and user-friendly outputs.",
+      "image": "",
+      "file": null,
+      "date": "2024-10-18"
+    },
+    {
+      "id": "post6",
+      "contributorId": "silver",
+      "title": "Safety Use Cases in SRS",
+      "content": "Outlined use cases and constraints in the SRS with a focus on road safety. Designed scenarios showing how different actors (e.g., transport authorities, parents) interact with the system. Special attention was given to high-risk zone detection, which helped shape safety-related functional requirements.",
+      "image": "",
+      "file": null,
+      "date": "2024-10-22"
+    },
+    {
+      "id": "post7",
+      "contributorId": "ena",
+      "title": "Performance and Accuracy Requirements",
+      "content": "Defined the system's accuracy expectations and performance thresholds in the SRS. This included how fast the system should respond, the acceptable error rate in predictions, and how frequently live traffic or crash data should be refreshed. The requirements formed the basis for model validation criteria.",
+      "image": "",
+      "file": null,
+      "date": "2024-10-25"
+    },
+    {
+      "id": "post8",
+      "contributorId": "trevor",
+      "title": "Data Inputs and Outputs Mapping",
+      "content": "Mapped key data inputs like crash reports, GPS logs, and road segment metadata, and defined outputs such as predicted risk levels and optimized safe routes. Created data flow diagrams to show system interactions. This helped define the boundaries and dependencies for the SRS.",
+      "image": "",
+      "file": null,
+      "date": "2024-10-31"
+    },
+    {
+      "id": "post9",
+      "contributorId": "michael",
+      "title": "User Interface Design in SDD",
+      "content": "Designed wireframes and UI mockups for the web dashboard and mobile views. Focused on displaying risk zones on an interactive map, and simplifying user workflows for route suggestions. Also ensured responsive layout and visual clarity using accessible color schemes for risk indication.",
+      "image": "",
+      "file": null,
+      "date": "2025-01-24"
+    },
+    {
+      "id": "post10",
+      "contributorId": "silver",
+      "title": "System Architecture Design",
+      "content": "Worked on the architectural design of the system. Split the platform into frontend, backend services, ML engine, and database layers. Created UML component diagrams showing how data flows between modules and services. Ensured modularity for ease of maintenance and scalability.",
+      "image": "",
+      "file": null,
+      "date": "2024-01-28"
+    },
+    {
+      "id": "post11",
+      "contributorId": "ena",
+      "title": "Backend and Data Design",
+      "content": "Defined the database schema including crash reports, road segments, user feedback, and prediction results. Also helped design backend services that would handle data ingestion, model invocation, and user API requests. Structured endpoints and mapped expected request-response cycles.",
+      "image": "",
+      "file": null,
+      "date": "2024-02-02"
+    },
+    {
+      "id": "post12",
+      "contributorId": "trevor",
+      "title": "Geospatial Design and Routing Logic",
+      "content": "Planned how GPS data, road segment coordinates, and risk scores would be integrated for real-time route planning. Designed logic to overlay crash data on maps and dynamically adjust routes. Considered using GIS libraries and APIs for real-time mapping and navigation rendering.",
+      "image": "",
+      "file": null,
+      "date": "2024-02-08"
+    },
+    {
+      "id": "post13",
+      "contributorId": "sharon",
+      "title": "Kickoff: System Implementation Begins",
+      "content": "Started the implementation phase by setting up the backend framework and initializing the database schemas. Focused on integrating crash data tables and essential endpoints for system functionality. Laid a strong foundation for service-oriented development.",
+      "image": "",
+      "file": null,
+      "date": "2025-02-18"
+    },
+    {
+      "id": "post14",
+      "contributorId": "derrick",
+      "title": "Model Integration and API Setup",
+      "content": "Integrated the Random Forest and Gradient Boosting models into the backend services. Created API endpoints to handle prediction requests and return road risk classification based on user input. Also worked on secure connections between the ML engine and route logic.",
+      "image": "",
+      "file": null,
+      "date": "2025-02-25"
+    },
+    {
+      "id": "post15",
+      "contributorId": "collins",
+      "title": "Frontend Dashboard Development",
+      "content": "Built core user interface elements including the input form for start and end locations, and a responsive dashboard showing safe routes with risk-level overlays. Integrated Google Maps to visualize route paths.",
+      "image": "",
+      "file": null,
+      "date": "2025-03-03"
+    },
+    {
+      "id": "post16",
+      "contributorId": "sharon",
+      "title": "User Authentication and Route Access Control",
+      "content": "Implemented user registration, login, and role-based access to the dashboard. Ensured security around user sessions and introduced admin-only features like crash data uploads and user analytics.",
+      "image": "",
+      "file": null,
+      "date": "2025-03-10"
+    },
+    {
+      "id": "post17",
+      "contributorId": "derrick",
+      "title": "Unit Testing and Backend Debugging",
+      "content": "Conducted unit tests on API endpoints and ML service handlers. Detected and fixed bugs related to route misalignment and incorrect crash data mapping. Added logs for better traceability.",
+      "image": "",
+      "file": null,
+      "date": "2025-03-17"
+    },
+    {
+      "id": "post18",
+      "contributorId": "collins",
+      "title": "System Integration Testing",
+      "content": "Performed full integration testing between frontend, backend, and model layers. Simulated different user journeys to validate prediction accuracy and route display. Optimized queries for faster map rendering.",
+      "image": "",
+      "file": null,
+      "date": "2025-03-24"
+    },
+    {
+      "id": "post19",
+      "contributorId": "sharon",
+      "title": "Model Evaluation and Performance Tuning",
+      "content": "Ran validation tests on both machine learning models using real crash datasets. Based on performance, prioritized Random Forest for higher reliability in high-risk zone prediction. Adjusted model thresholds for better precision.",
+      "image": "",
+      "file": null,
+      "date": "2025-03-31"
+    },
+    {
+      "id": "post20",
+      "contributorId": "derrick",
+      "title": "Mobile Compatibility and UI Responsiveness",
+      "content": "Tested the web dashboard across devices and screen sizes. Refined mobile layout and improved accessibility. Fixed map responsiveness issues to ensure smooth pan and zoom interactions on smaller devices.",
+      "image": "",
+      "file": null,
+      "date": "2025-04-07"
+    },
+    {
+      "id": "post21",
+      "contributorId": "collins",
+      "title": "Bug Fixes and Documentation Updates",
+      "content": "Resolved bugs in risk display overlays and API timeout issues. Enhanced error handling in backend services. Updated internal developer docs and API usage guides for ease of maintenance and onboarding.",
+      "image": "",
+      "file": null,
+      "date": "2025-04-14"
+    },
+    {
+      "id": "post22",
+      "contributorId": "sharon",
+      "title": "Security Enhancements and Deployment",
+      "content": "Implemented HTTPS support, token-based API access, and CORS configuration. Deployed the application to a remote server and ensured environment security settings were correctly applied.",
+      "image": "",
+      "file": null,
+      "date": "2025-04-21"
+    },
+    {
+      "id": "post23",
+      "contributorId": "derrick",
+      "title": "System Validation and User Testing",
+      "content": "Carried out user testing with feedback sessions. Verified that route suggestions were accurate and the system interface was user-friendly. Refined UI elements based on user feedback.",
+      "image": "",
+      "file": null,
+      "date": "2025-04-28"
+    },
+    {
+      "id": "post24",
+      "contributorId": "collins",
+      "title": "Final Touches and Project Wrap-Up",
+      "content": "Concluded implementation and testing phase with stability checks and system backups. Ensured all features met the specified requirements and that documentation and deployment pipelines were complete.",
+      "image": "",
+      "file": null,
+      "date": "2025-05-05"
+    }
   ],
   "ratings": {},
   "comments": {}
