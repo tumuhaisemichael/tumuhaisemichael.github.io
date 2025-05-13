@@ -81,6 +81,78 @@
         "image": "",
         "file": null,
         "date": "2024-10-05"
+      },
+      {
+        "id": "post5",
+        "contributorId": "michael",
+        "title": "System Requirements Specification (SRS)",
+        "content": "Led the documentation of functional and non-functional requirements for the Road Risk Prediction System. This included defining user goals, system features such as crash risk estimation, performance needs, and usability constraints. The SRS ensured the system would be aligned with stakeholder expectations, especially focusing on real-time responsiveness and user-friendly outputs.",
+        "image": "",
+        "file": null,
+        "date": "2024-10-18"
+      },
+      {
+        "id": "post6",
+        "contributorId": "silver",
+        "title": "Safety Use Cases in SRS",
+        "content": "Outlined use cases and constraints in the SRS with a focus on road safety. Designed scenarios showing how different actors (e.g., transport authorities, parents) interact with the system. Special attention was given to high-risk zone detection, which helped shape safety-related functional requirements.",
+        "image": "",
+        "file": null,
+        "date": "2024-10-22"
+      },
+      {
+        "id": "post7",
+        "contributorId": "ena",
+        "title": "Performance and Accuracy Requirements",
+        "content": "Defined the system's accuracy expectations and performance thresholds in the SRS. This included how fast the system should respond, the acceptable error rate in predictions, and how frequently live traffic or crash data should be refreshed. The requirements formed the basis for model validation criteria.",
+        "image": "",
+        "file": null,
+        "date": "2024-10-25"
+      },
+      {
+        "id": "post8",
+        "contributorId": "trevor",
+        "title": "Data Inputs and Outputs Mapping",
+        "content": "Mapped key data inputs like crash reports, GPS logs, and road segment metadata, and defined outputs such as predicted risk levels and optimized safe routes. Created data flow diagrams to show system interactions. This helped define the boundaries and dependencies for the SRS.",
+        "image": "",
+        "file": null,
+        "date": "2024-10-31"
+      },
+      {
+        "id": "post9",
+        "contributorId": "michael",
+        "title": "User Interface Design in SDD",
+        "content": "Designed wireframes and UI mockups for the web dashboard and mobile views. Focused on displaying risk zones on an interactive map, and simplifying user workflows for route suggestions. Also ensured responsive layout and visual clarity using accessible color schemes for risk indication.",
+        "image": "",
+        "file": null,
+        "date": "2024-11-10"
+      },
+      {
+        "id": "post10",
+        "contributorId": "silver",
+        "title": "System Architecture Design",
+        "content": "Worked on the architectural design of the system. Split the platform into frontend, backend services, ML engine, and database layers. Created UML component diagrams showing how data flows between modules and services. Ensured modularity for ease of maintenance and scalability.",
+        "image": "",
+        "file": null,
+        "date": "2024-11-15"
+      },
+      {
+        "id": "post11",
+        "contributorId": "ena",
+        "title": "Backend and Data Design",
+        "content": "Defined the database schema including crash reports, road segments, user feedback, and prediction results. Also helped design backend services that would handle data ingestion, model invocation, and user API requests. Structured endpoints and mapped expected request-response cycles.",
+        "image": "",
+        "file": null,
+        "date": "2024-11-20"
+      },
+      {
+        "id": "post12",
+        "contributorId": "trevor",
+        "title": "Geospatial Design and Routing Logic",
+        "content": "Planned how GPS data, road segment coordinates, and risk scores would be integrated for real-time route planning. Designed logic to overlay crash data on maps and dynamically adjust routes. Considered using GIS libraries and APIs for real-time mapping and navigation rendering.",
+        "image": "",
+        "file": null,
+        "date": "2024-11-30"
       }
     ]
   ],
