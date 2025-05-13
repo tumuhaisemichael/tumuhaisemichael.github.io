@@ -45,7 +45,6 @@
     }
   ],
   "posts": [
-    [
       {
         "id": "post1",
         "contributorId": "michael",
@@ -82,7 +81,7 @@
         "file": null,
         "date": "2024-10-05"
       }
-    ]
+    
   ],
   "ratings": {},
   "comments": {}
