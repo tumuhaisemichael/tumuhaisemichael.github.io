@@ -45,158 +45,44 @@
     }
   ],
   "posts": [
-    {
-      "id": "michael",
-      "name": "Michael",
-      "email": "michael@gmail.com",
-      "role": "Content Creator",
-      "activities": [
-        {
-          "phase": "Data Collection",
-          "start": "2024-09-12",
-          "end": "2024-09-25",
-          "details": "Researched and documented various data sources including crash reports, road segment data, and weather logs. Participated in field visits to government agencies and schools. From Uganda Road Fund and UNRA, obtained data on road conditions and maintenance schedules. KCCA provided city traffic congestion patterns and enforcement records. The Ministry of Works and Transport shared national transportation policies and road safety programs. At Sir Apollo Kagwa School, we engaged with the ACT (Association for Children Transporters) to understand current school transport challenges and collect feedback on route safety."
-        },
-        {
-          "phase": "SRS",
-          "start": "2024-10-11",
-          "end": "2024-10-18",
-          "details": "Drafted functional and non-functional requirements based on user needs."
-        },
-        {
-          "phase": "SDD",
-          "start": "2024-11-01",
-          "end": "2024-11-10",
-          "details": "Created wireframes and UI mockups for the dashboard and user interface."
-        },
-        {
-          "phase": "Implementation",
-          "start": "2025-02-01",
-          "end": "2025-02-28",
-          "details": "Developed the front-end using React, including interactive map components."
-        },
-        {
-          "phase": "Testing",
-          "start": "2025-03-16",
-          "end": "2025-04-05",
-          "details": "Led UI/UX testing and gathered user feedback for improvements."
-        }
-      ]
-    },
-    {
-      "id": "silver",
-      "name": "Silver",
-      "email": "silver@gmail.com",
-      "role": "Safety Analyst",
-      "activities": [
-        {
-          "phase": "Data Collection",
-          "start": "2024-09-13",
-          "end": "2024-09-30",
-          "details": "Gathered safety-related data from national road safety authorities and filtered high-risk zones. Collected accident frequency and location reports from UNRA and Ministry of Works and Transport. Obtained enforcement and incident data from KCCA. Interviewed ACT members at Sir Apollo Kagwa School about safety practices and their main transport risks."
-        },
-        {
-          "phase": "SRS",
-          "start": "2024-10-15",
-          "end": "2024-10-22",
-          "details": "Defined safety use cases and constraints related to road risk prediction."
-        },
-        {
-          "phase": "SDD",
-          "start": "2024-11-05",
-          "end": "2024-11-15",
-          "details": "Helped define the system’s safety risk model architecture."
-        },
-        {
-          "phase": "Implementation",
-          "start": "2025-02-01",
-          "end": "2025-02-20",
-          "details": "Implemented the safety analysis logic and rule-based classification."
-        },
-        {
-          "phase": "Testing",
-          "start": "2025-03-20",
-          "end": "2025-04-10",
-          "details": "Validated risk classifications against safety benchmarks."
-        }
-      ]
-    },
-    {
-      "id": "ena",
-      "name": "Ena",
-      "email": "ena@gmail.com",
-      "role": "Traffic Specialist",
-      "activities": [
-        {
-          "phase": "Data Collection",
-          "start": "2024-09-15",
-          "end": "2024-10-10",
-          "details": "Collected traffic flow and congestion data from Google Maps APIs and public datasets. Visited KCCA for real-time traffic signal data and congestion reports. Collaborated with ACT members to understand peak hour school transport challenges."
-        },
-        {
-          "phase": "SRS",
-          "start": "2024-10-18",
-          "end": "2024-10-25",
-          "details": "Outlined performance and data accuracy requirements."
-        },
-        {
-          "phase": "SDD",
-          "start": "2024-11-10",
-          "end": "2024-11-20",
-          "details": "Designed backend components responsible for traffic and road analysis."
-        },
-        {
-          "phase": "Implementation",
-          "start": "2025-02-05",
-          "end": "2025-02-28",
-          "details": "Trained machine learning models using crash and traffic data."
-        },
-        {
-          "phase": "Testing",
-          "start": "2025-03-25",
-          "end": "2025-04-20",
-          "details": "Performed model validation using confusion matrices and AUC scores."
-        }
-      ]
-    },
-    {
-      "id": "trevor",
-      "name": "Trevor",
-      "email": "trevor@gmail.com",
-      "role": "Route Planner",
-      "activities": [
-        {
-          "phase": "Data Collection",
-          "start": "2024-09-14",
-          "end": "2024-10-05",
-          "details": "Focused on identifying geospatial data for mapping and road segment labeling. Sourced GIS road network files from UNRA and KCCA. Noted important access points and drop zones from ACT discussions at Sir Apollo Kagwa School."
-        },
-        {
-          "phase": "SRS",
-          "start": "2024-10-22",
-          "end": "2024-10-31",
-          "details": "Mapped system inputs/outputs and created data flow diagrams."
-        },
-        {
-          "phase": "SDD",
-          "start": "2024-11-15",
-          "end": "2024-11-30",
-          "details": "Planned geospatial mapping integration and route optimization modules."
-        },
-        {
-          "phase": "Implementation",
-          "start": "2025-02-10",
-          "end": "2025-03-15",
-          "details": "Integrated optimized route generation algorithms with real-time APIs."
-        },
-        {
-          "phase": "Testing",
-          "start": "2025-04-01",
-          "end": "2025-05-05",
-          "details": "Tested route optimization performance under different traffic scenarios."
-        }
-      ]
-    }
+    [
+      {
+        "id": "post1",
+        "contributorId": "michael",
+        "title": "Data Collection Activities",
+        "content": "Researched and documented various data sources including crash reports, road segment data, and weather logs. Participated in field visits to government agencies and schools. From Uganda Road Fund and UNRA, obtained data on road conditions and maintenance schedules. KCCA provided city traffic congestion patterns and enforcement records. The Ministry of Works and Transport shared national transportation policies and road safety programs. At Sir Apollo Kagwa School, we engaged with the ACT (Association for Children Transporters) to understand current school transport challenges and collect feedback on route safety.",
+        "image": "",
+        "file": null,
+        "date": "2024-09-25"
+      },
+      {
+        "id": "post2",
+        "contributorId": "silver",
+        "title": "Road Safety Data Collection",
+        "content": "Gathered safety-related data from national road safety authorities and filtered high-risk zones. Collected accident frequency and location reports from UNRA and Ministry of Works and Transport. Obtained enforcement and incident data from KCCA. Interviewed ACT members at Sir Apollo Kagwa School about safety practices and their main transport risks.",
+        "image": "",
+        "file": null,
+        "date": "2024-09-30"
+      },
+      {
+        "id": "post3",
+        "contributorId": "ena",
+        "title": "Traffic Data Gathering",
+        "content": "Collected traffic flow and congestion data from Google Maps APIs and public datasets. Visited KCCA for real-time traffic signal data and congestion reports. Collaborated with ACT members to understand peak hour school transport challenges.",
+        "image": "",
+        "file": null,
+        "date": "2024-10-10"
+      },
+      {
+        "id": "post4",
+        "contributorId": "trevor",
+        "title": "Geospatial Data Collection",
+        "content": "Focused on identifying geospatial data for mapping and road segment labeling. Sourced GIS road network files from UNRA and KCCA. Noted important access points and drop zones from ACT discussions at Sir Apollo Kagwa School.",
+        "image": "",
+        "file": null,
+        "date": "2024-10-05"
+      }
+    ]
   ],
   "ratings": {},
   "comments": {}
