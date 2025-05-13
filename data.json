@@ -36,7 +36,7 @@
   "articles": [
     {
       "id": "art1",
-      "title": "How ML Models Are Revolutionizing School Bus Routes",
+      "title": "How ML Models Are Revolutionizing School Bus Routes and tracking",
       "category": "Technology",
       "date": "2025-05-05",
       "content": "Discover how our proprietary machine learning algorithms are creating safer, more efficient routes for school transportation systems.",
@@ -45,7 +45,6 @@
     }
   ],
   "posts": [
-    [
       {
         "id": "post1",
         "contributorId": "michael",
@@ -154,7 +153,7 @@
         "file": null,
         "date": "2024-11-30"
       }
-    ]
+    
   ],
   "ratings": {},
   "comments": {}
