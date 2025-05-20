@@ -47,7 +47,7 @@
   "posts": [
     {
       "id": "post1",
-      "contributorId": "michael",
+      "contributorId": "ena",
       "title": "Data Collection Activities",
       "content": "Researched and documented various data sources including crash reports, road segment data, and weather logs. Participated in field visits to government agencies and schools. From Uganda Road Fund and UNRA, obtained data on road conditions and maintenance schedules. KCCA provided city traffic congestion patterns and enforcement records. The Ministry of Works and Transport shared national transportation policies and road safety programs. At Sir Apollo Kagwa School, we engaged with the ACT (Association for Children Transporters) to understand current school transport challenges and collect feedback on route safety.",
       "image": "",
@@ -65,7 +65,7 @@
     },
     {
       "id": "post3",
-      "contributorId": "ena",
+      "contributorId": "michael",
       "title": "Traffic Data Gathering",
       "content": "Collected traffic flow and congestion data from Google Maps APIs and public datasets. Visited KCCA for real-time traffic signal data and congestion reports. Collaborated with ACT members to understand peak hour school transport challenges.",
       "image": "",
@@ -129,8 +129,8 @@
     {
       "id": "post10",
       "contributorId": "silver",
-      "title": "System Architecture Design",
-      "content": "Worked on the architectural design of the system. Split the platform into frontend, backend services, ML engine, and database layers. Created UML component diagrams showing how data flows between modules and services. Ensured modularity for ease of maintenance and scalability.",
+      "title": "Backend and Data Design",
+      "content": "Defined the database schema including crash reports, road segments, user feedback, and prediction results. Also helped design backend services that would handle data ingestion, model invocation, and user API requests. Structured endpoints and mapped expected request-response cycles.",
       "image": "",
       "file": null,
       "date": "2024-01-28"
@@ -138,8 +138,8 @@
     {
       "id": "post11",
       "contributorId": "ena",
-      "title": "Backend and Data Design",
-      "content": "Defined the database schema including crash reports, road segments, user feedback, and prediction results. Also helped design backend services that would handle data ingestion, model invocation, and user API requests. Structured endpoints and mapped expected request-response cycles.",
+      "title": "System Architecture Design",
+      "content": "Worked on the architectural design of the system. Split the platform into frontend, backend services, ML engine, and database layers. Created UML component diagrams showing how data flows between modules and services. Ensured modularity for ease of maintenance and scalability.",
       "image": "",
       "file": null,
       "date": "2024-02-02"
@@ -155,7 +155,7 @@
     },
     {
       "id": "post13",
-      "contributorId": "sharon",
+      "contributorId": "silver",
       "title": "Kickoff: System Implementation Begins",
       "content": "Started the implementation phase by setting up the backend framework and initializing the database schemas. Focused on integrating crash data tables and essential endpoints for system functionality. Laid a strong foundation for service-oriented development.",
       "image": "",
@@ -164,7 +164,7 @@
     },
     {
       "id": "post14",
-      "contributorId": "derrick",
+      "contributorId": "Travor",
       "title": "Model Integration and API Setup",
       "content": "Integrated the Random Forest and Gradient Boosting models into the backend services. Created API endpoints to handle prediction requests and return road risk classification based on user input. Also worked on secure connections between the ML engine and route logic.",
       "image": "",
@@ -173,7 +173,7 @@
     },
     {
       "id": "post15",
-      "contributorId": "collins",
+      "contributorId": "michael",
       "title": "Frontend Dashboard Development",
       "content": "Built core user interface elements including the input form for start and end locations, and a responsive dashboard showing safe routes with risk-level overlays. Integrated Google Maps to visualize route paths.",
       "image": "",
@@ -182,7 +182,7 @@
     },
     {
       "id": "post16",
-      "contributorId": "sharon",
+      "contributorId": "ena",
       "title": "User Authentication and Route Access Control",
       "content": "Implemented user registration, login, and role-based access to the dashboard. Ensured security around user sessions and introduced admin-only features like crash data uploads and user analytics.",
       "image": "",
@@ -191,7 +191,7 @@
     },
     {
       "id": "post17",
-      "contributorId": "derrick",
+      "contributorId": "silver",
       "title": "Unit Testing and Backend Debugging",
       "content": "Conducted unit tests on API endpoints and ML service handlers. Detected and fixed bugs related to route misalignment and incorrect crash data mapping. Added logs for better traceability.",
       "image": "",
@@ -200,7 +200,7 @@
     },
     {
       "id": "post18",
-      "contributorId": "collins",
+      "contributorId": "michael",
       "title": "System Integration Testing",
       "content": "Performed full integration testing between frontend, backend, and model layers. Simulated different user journeys to validate prediction accuracy and route display. Optimized queries for faster map rendering.",
       "image": "",
@@ -209,7 +209,7 @@
     },
     {
       "id": "post19",
-      "contributorId": "sharon",
+      "contributorId": "ena",
       "title": "Model Evaluation and Performance Tuning",
       "content": "Ran validation tests on both machine learning models using real crash datasets. Based on performance, prioritized Random Forest for higher reliability in high-risk zone prediction. Adjusted model thresholds for better precision.",
       "image": "",
@@ -218,7 +218,7 @@
     },
     {
       "id": "post20",
-      "contributorId": "derrick",
+      "contributorId": "michael",
       "title": "Mobile Compatibility and UI Responsiveness",
       "content": "Tested the web dashboard across devices and screen sizes. Refined mobile layout and improved accessibility. Fixed map responsiveness issues to ensure smooth pan and zoom interactions on smaller devices.",
       "image": "",
@@ -227,7 +227,7 @@
     },
     {
       "id": "post21",
-      "contributorId": "collins",
+      "contributorId": "trevor",
       "title": "Bug Fixes and Documentation Updates",
       "content": "Resolved bugs in risk display overlays and API timeout issues. Enhanced error handling in backend services. Updated internal developer docs and API usage guides for ease of maintenance and onboarding.",
       "image": "",
@@ -236,7 +236,7 @@
     },
     {
       "id": "post22",
-      "contributorId": "sharon",
+      "contributorId": "michael",
       "title": "Security Enhancements and Deployment",
       "content": "Implemented HTTPS support, token-based API access, and CORS configuration. Deployed the application to a remote server and ensured environment security settings were correctly applied.",
       "image": "",
@@ -245,7 +245,7 @@
     },
     {
       "id": "post23",
-      "contributorId": "derrick",
+      "contributorId": "ena",
       "title": "System Validation and User Testing",
       "content": "Carried out user testing with feedback sessions. Verified that route suggestions were accurate and the system interface was user-friendly. Refined UI elements based on user feedback.",
       "image": "",
@@ -254,7 +254,7 @@
     },
     {
       "id": "post24",
-      "contributorId": "collins",
+      "contributorId": "silver",
       "title": "Final Touches and Project Wrap-Up",
       "content": "Concluded implementation and testing phase with stability checks and system backups. Ensured all features met the specified requirements and that documentation and deployment pipelines were complete.",
       "image": "",
